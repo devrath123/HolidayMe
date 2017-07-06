@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/minusButtonImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icn_minus"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <com.holidayme.widgets.LightFontEditText
+            android:id="@+id/numberEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@null"
+            android:focusable="false"
+            android:textColor="@color/text_sky_blue"
+            android:textSize="30sp"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/addButtonImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icn_plus"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+

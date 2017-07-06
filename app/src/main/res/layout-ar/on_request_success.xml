@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#60000000"
+                android:clickable="true">
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/closeSucessTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/successCloseRelativeLayout"
+        android:background="#60000000"/>
+
+    <RelativeLayout
+        android:id="@+id/closeRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="20dp"
+        >
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/closeRequestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/close_button_bg"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/close"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <com.holidayme.widgets.MediumFontTextView
+        android:id="@+id/thankYouTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/closeRelativeLayout"
+        android:background="@color/white"
+        android:paddingBottom="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/thankyou_for_choosing"
+        android:textSize="15sp"
+        android:gravity="right"/>
+
+    <com.holidayme.widgets.MediumFontTextView
+        android:id="@+id/alternatelyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/thankYouTextView"
+        android:background="@color/white"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/alternatively"
+        android:textSize="15sp"
+        android:gravity="right"/>
+
+    <com.holidayme.widgets.MediumFontTextView
+        android:id="@+id/revertTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/alternatelyTextView"
+        android:background="@color/white"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/revert_shortly"
+        android:textSize="15sp"
+        android:gravity="right"/>
+
+    <com.holidayme.widgets.MediumFontTextView
+        android:id="@+id/requestSubmittedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/revertTextView"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/request_submitted"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:id="@+id/successCloseRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/requestSubmittedTextView"
+        android:background="@color/white"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/icn_free_cancellation"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

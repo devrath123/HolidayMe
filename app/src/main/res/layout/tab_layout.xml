@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/custom_tab_indicator_divider"
+
+        />
+    <!-- Tab title -->
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@drawable/tab_item_selector"/>
+
+    <!-- Tab divider -->
+    <View
+        android:id="@+id/view_between_tab"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/custom_tab_indicator_divider" />
+</RelativeLayout>

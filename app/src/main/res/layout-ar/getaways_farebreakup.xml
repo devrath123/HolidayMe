@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/staycation_theme"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/top_header"
+        layout="@layout/header_with_title_and_back"
+        />
+
+    <RelativeLayout
+        android:id="@+id/packagePriceRelativeLayout"
+        android:layout_below="@+id/top_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/textPackagePriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/per_package_cost"
+            android:textSize="18sp"
+            />
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/perPackageCostTextView"
+            android:layout_toEndOf="@+id/textPackagePriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="start"
+            android:textSize="18sp"
+            android:text=""
+
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/numberOfPackagesRelativeLayout"
+        android:layout_below="@+id/packagePriceRelativeLayout"
+        android:layout_width="match_parent"
+        android:background="@color/staycation_theme"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/textNumberOfPackagesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number_of_packages"
+            android:textSize="18sp"
+            />
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/numberOfAllocationTextView"
+            android:layout_toEndOf="@+id/textNumberOfPackagesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            android:textSize="18sp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/packageAmountRelativeLayout"
+        android:layout_below="@+id/numberOfPackagesRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/textPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_amount"
+            android:textStyle="bold"
+            android:textSize="18sp"
+
+            />
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/totalPriceTextView"
+            android:layout_toEndOf="@+id/textPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/save_pink"
+            android:layout_alignParentEnd="true"
+            android:gravity="start"
+            android:textSize="18sp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

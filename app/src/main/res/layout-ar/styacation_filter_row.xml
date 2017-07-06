@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/staycation_theme">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/sortRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/padding_normal"
+            android:layout_height="wrap_content">
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/sortLable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/count"
+            android:text="@string/sort_by"
+            android:textSize="18sp"
+            android:gravity="right"
+            android:padding="@dimen/common_padding_small"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sortLable"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+           >
+            <RadioButton
+                android:id="@+id/popularitySortRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Popularity"
+                android:drawablePadding="5dp"
+                android:padding="@dimen/common_padding_small"
+                android:checked="true"
+                android:drawableStart="@drawable/getaways_sort_selector"
+                android:drawableEnd="@drawable/arrow_down"
+                android:button="@android:color/transparent"
+                android:textColor="@color/dark_gray_text_color"/>
+            <RadioButton
+                android:id="@+id/priceSortRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/price"
+                android:drawablePadding="5dp"
+                android:padding="@dimen/common_padding_small"
+                android:drawableStart="@drawable/getaways_sort_selector"
+                android:button="@android:color/transparent"
+                android:textColor="@color/dark_gray_text_color"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/common_padding_small"
+            android:paddingBottom="@dimen/common_padding_small"
+            android:paddingStart="@dimen/common_padding_small"
+            android:text="01"
+            android:visibility="gone"
+            android:layout_alignBaseline="@+id/sortLable"
+            android:layout_alignBottom="@+id/sortLable"
+            android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <com.holidayme.widgets.MediumFontTextView
+        android:id="@+id/resetFilterTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sortRelativeLayout"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="5dp"
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableStart="@drawable/reset"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/reset_filter"
+        android:textColor="@color/blue"/>
+    <android.support.v7.widget.CardView
+        android:id="@+id/filterCategoriesRelativeLayout"
+        android:layout_below="@+id/resetFilterTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shadow_effect"
+        android:layout_marginEnd="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/padding_normal"
+            android:layout_height="wrap_content">
+
+            <com.holidayme.widgets.FlowLayout
+                android:id="@+id/categoriesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/categoriesLable"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="end"
+                />
+
+        <TextView
+            android:id="@+id/count_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/common_padding_small"
+            android:paddingBottom="@dimen/common_padding_small"
+            android:paddingStart="@dimen/common_padding_small"
+            android:text="02"
+            android:visibility="gone"
+            android:layout_alignBaseline="@+id/categoriesLable"
+            android:layout_alignBottom="@+id/categoriesLable"
+            android:layout_alignParentStart="true"
+            tools:ignore="RtlSymmetry" />
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:id="@+id/categoriesLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Select_categories"
+                android:textSize="18sp"
+                android:layout_toEndOf="@+id/count_filter"
+                android:padding="@dimen/common_padding_small"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/filterCategoriesRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shadow_effect"
+        android:layout_marginEnd="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/padding_normal"
+            android:layout_height="wrap_content">
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:id="@+id/distanceLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/count_distance"
+                android:text="@string/Select_Distance"
+                android:textSize="18sp"
+                android:padding="@dimen/common_padding_small"
+                android:textColor="@color/black"/>
+            <SeekBar
+                android:id="@+id/distanceSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/distanceLable"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:padding="-5dp"
+                android:progress="600"
+                android:max="600"
+                android:thumb="@drawable/radio_btn_sort_normal"
+                android:progressTint="@color/save_pink"/>
+
+
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/count_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_small"
+                android:paddingBottom="@dimen/common_padding_small"
+                android:paddingStart="@dimen/common_padding_small"
+                android:text="03"
+                android:visibility="gone"
+                android:layout_alignBaseline="@+id/distanceLable"
+                android:layout_alignBottom="@+id/distanceLable"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/dark_gray_text_color"
+                android:textSize="12sp"
+                tools:ignore="RtlSymmetry" />
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/startDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_distance"
+                android:paddingTop="5dp"
+                android:textColor="@color/dark_gray_text_color"
+                android:textSize="10sp"
+                android:gravity="start"
+
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/distanceSeekBar"/>
+
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/second_distance"
+                android:paddingTop="5dp"
+                android:textColor="@color/dark_gray_text_color"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_below="@id/distanceSeekBar"
+                android:layout_toEndOf="@+id/startDistance" />
+
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/middle_distance"
+                android:paddingTop="5dp"
+                android:id="@+id/textView3"
+                android:textColor="@color/dark_gray_text_color"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_below="@id/distanceSeekBar"
+                android:layout_toEndOf="@+id/text"
+                />
+
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/end_distance"
+                android:textColor="@color/dark_gray_text_color"
+                android:textSize="10sp"
+                android:layout_below="@+id/distanceSeekBar"
+                android:layout_toEndOf="@+id/textView3"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:id="@+id/lightFontTextView" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light_grey"
+                >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/headerDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/little_dark_grey">
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/nightsDurationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="TUE, 14 FEB 2017"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentLeft="true"/>
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/numberOfNightsTextView"
+            android:layout_below="@+id/nightsDurationTextView"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:text="2 Nights"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentLeft="true"/>
+
+        <CheckBox
+            android:layout_alignParentTop="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/checkbox_selector"
+            android:checked="true"
+            android:enabled="false"/>
+
+    </RelativeLayout>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/numberOfPackages"
+        android:layout_below="@+id/headerDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_number_of_packages"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"/>
+
+    <GridView
+        android:id="@+id/allocationsGridView"
+        android:layout_below="@+id/numberOfPackages"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:numColumns="4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="start"
+        android:layoutDirection="ltr"/>
+
+    <RelativeLayout
+        android:id="@+id/bookNowRelativeLayout"
+        android:layout_below="@id/allocationsGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/save_pink"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/bookDealTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"/>
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/totalBookingAmountTextView"
+            android:layout_below="@+id/bookDealTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XX.XX"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/right_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

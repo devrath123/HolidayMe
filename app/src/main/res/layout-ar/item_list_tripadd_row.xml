@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal"
+    android:paddingTop="@dimen/padding_normal"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/tripAdviserRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        tools:ignore="UselessParent">
+        <CheckBox
+            android:id="@+id/tripAdviserCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/filter_check_box_bg"
+            android:button="@android:color/transparent"
+            android:clickable="false"
+            android:layout_gravity="center_vertical"
+            android:checked="false"
+            android:text="" />
+        <ImageView
+            android:id="@+id/tripAdviserThumbnailImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_padding_small"
+            android:scaleX="-1"
+            android:layout_gravity="center_vertical"
+            tools:ignore="ContentDescription" />
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/tripAdviserCountTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|right"
+            android:text=""
+            android:layout_gravity="start|center_vertical"
+            android:textColor="@color/light_purple"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+</RelativeLayout>

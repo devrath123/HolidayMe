@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+
+    <dimen name="tab_max_width">264dp</dimen>
+
+    <!-- Text size -->
+    <dimen name="commonExtraLargeTextSize">18sp</dimen>
+    <dimen name="commonLargeTextSize">12sp</dimen>
+    <dimen name="commonNormalTextSize">12sp</dimen>
+    <dimen name="commonSmallTextSize">8sp</dimen>
+    <dimen name="commonExtraSmallTextSize">10sp</dimen>
+
+
+    <dimen name="padding_normal">10dp</dimen>
+    <dimen name="padding_extra_small">2dp</dimen>
+    <dimen name="padding_large_normal">15dp</dimen>
+    <dimen name="padding_extra_large">20dp</dimen>
+
+    <dimen name="Select_currency_padding">15dp</dimen>
+    <dimen name="common_padding_small">5dp</dimen>
+
+    <!-- select_language -->
+    <dimen name="holiday_me_image_height">80dp</dimen>
+
+
+    <dimen name="first_key_line">16dp</dimen>
+    <dimen name="toolbar_horizontal_padding">4dp</dimen>
+
+
+    <!--index page-->
+    <dimen name="top_padding">33.33dp</dimen>
+    <dimen name="side_padding">22.33dp</dimen>
+    <dimen name="heading_txt_size">12sp</dimen>
+    <dimen name="destination_txt_size">20sp</dimen>
+    <dimen name="padding_between">25dp</dimen>
+    <dimen name="date_text_size">28sp</dimen>
+    <dimen name="month_txt_size">10sp</dimen>
+    <dimen name="padding_day_month">5.33dp</dimen>
+    <dimen name="txt_size_adult_count">15sp</dimen>
+    <dimen name="text_size_search">15sp</dimen>
+
+    <!-- add room-->
+    <dimen name="small_padding">13.33dp</dimen>
+    <dimen name="x_small_padding">7.33dp</dimen>
+    <dimen name="padding_end">22.67dp</dimen>
+    <dimen name="margin_left_large">18dp</dimen>
+
+    <dimen name="detail_backdrop_height">300dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="list_item_avatar_size">40dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- StayCation Index Page-->
+    <dimen name="bottom_navigation_height">60dp</dimen>
+    <dimen name="near_gateway_count_start_padding">10dp</dimen>
+    <dimen name="near_gateway_top_margin">13dp</dimen>
+    <dimen name="near_gateway_bottom_margin">5dp</dimen>
+
+    <dimen name="large_gateway_text_size">18sp</dimen>
+    <dimen name="medium_gateway_text_size">15sp</dimen>
+
+
+    <!-- StayCation Index Page Adapter-->
+    <dimen name="gateway_index_page_row_height">180dp</dimen>
+    <dimen name="common_gateway_index_row_bottom_margin">12dp</dimen>
+    <dimen name="common_gateway_index_row_text_start_padding">14dp</dimen>
+    <dimen name="gateway_index_page_row_margin_top">6dp</dimen>
+    <dimen name="gateway_index_page_row_margin_start">4dp</dimen>
+    <dimen name="gateway_index_page_row_corner">3dp</dimen>
+
+
+    // Booking confirmation page
+
+    <dimen name="common_margin">15dp</dimen>
+
+
+</resources>

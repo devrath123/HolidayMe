@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/roomCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/purple_checkbox_selector"
+        android:button="@null"
+        />
+
+    <com.holidayme.widgets.MediumFontTextView
+        android:id="@+id/roomTypeTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Standard Room "/>
+
+    <com.holidayme.widgets.MediumFontTextView
+        android:id="@+id/roomCostTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:text="(+AED 112)"
+        android:textColor="@color/save_pink"/>
+
+</LinearLayout>

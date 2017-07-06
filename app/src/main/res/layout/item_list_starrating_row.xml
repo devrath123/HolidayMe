@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp"
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/starRatingRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <CheckBox
+            android:id="@+id/startRatingCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/filter_check_box_bg"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:clickable="false"
+
+            />
+
+        <include
+            layout="@layout/rating"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/txt_other"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/starRatingCountTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="end|right"
+            android:text="1"
+            android:textColor="@color/text_sky_light"
+
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

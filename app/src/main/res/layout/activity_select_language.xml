@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/topLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/holiday_me_image_height"
+        android:background="@color/white"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_logo"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/saveButton"
+        android:layout_below="@+id/topLinearLayout"
+        android:background="@color/staycation_theme"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            >
+
+
+            <RadioButton
+
+                android:id="@+id/english_language"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/singleLineView"
+                android:background="@drawable/select_language_bg"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/English"
+                android:textColor="@color/white"
+                android:textSize="@dimen/commonLargeTextSize"
+                />
+
+            <View
+                android:id="@+id/singleLineView"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"/>
+
+            <RadioButton
+                android:id="@+id/arabic_language"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="1dp"
+                android:layout_toEndOf="@+id/singleLineView"
+                android:background="@drawable/select_language_bg"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/ARABIC"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/commonExtraLargeTextSize"
+
+                />
+
+        </RelativeLayout>
+
+
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/selectCurrencyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_normal"
+            android:paddingTop="@dimen/padding_normal"
+            android:paddingStart="20dp"
+            android:background="@color/white"
+            android:text=""
+            android:textColor="@color/black"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/light_grey">
+
+        </View>
+
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:choiceMode="singleChoice"
+            android:divider="@color/staycation_theme"
+            android:background="@color/white"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/save_pink"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>

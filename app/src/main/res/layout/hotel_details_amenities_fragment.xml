@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_gravity="center"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/custom_tab_indicator_divider"
+        android:layout_alignParentTop="true"
+        android:id="@+id/topView"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:visibility="gone"
+
+        />
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/addAmenitiesContainerLinearLayout"
+    android:layout_below="@id/topView"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingStart="@dimen/padding_normal"
+    android:paddingEnd="@dimen/padding_normal"
+    android:layout_marginBottom="@dimen/padding_normal">
+
+
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorRed"
+        android:text="@string/no_anemites_found"
+        android:layout_height="fill_parent"
+        android:visibility="invisible"
+        android:id="@+id/errorTextView"
+        android:gravity="center"
+        android:layout_gravity="center" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+</ScrollView>

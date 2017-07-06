@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+    <View
+        android:id="@+id/singleView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dark_gray_text_color"/>
+
+    <com.holidayme.widgets.BoldFontTextView
+        android:layout_below="@+id/singleView"
+        android:layout_marginTop="7.5dp"
+        android:id="@+id/roomNo_HotelBreakUp_TextView"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/roomNo_HotelBreakUp_TextView"
+        android:layout_marginTop="7.5dp"
+        android:background="@color/dark_gray_text_color"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/confirmation_HotelBreakUp_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roomNo_HotelBreakUp_TextView"
+        android:layout_marginTop="15dp"
+        android:text= "@string/Confirmation_No"
+        android:textColor="@color/dark_gray_text_color"
+        android:textSize="15sp"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/confirmationNumber_HotelBreakUp_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/roomNo_HotelBreakUp_TextView"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="end"
+        android:text=""
+        android:textColor="@color/save_pink"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/confirmation_HotelBreakUp_TextView"
+        android:layout_marginTop="7.5dp"
+        android:background="@color/dark_gray_text_color"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/travellers_HotelBreakUp_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmation_HotelBreakUp_TextView"
+        android:layout_marginTop="15dp"
+        android:text="@string/travellers"
+        android:textColor="@color/dark_gray_text_color"
+        android:textSize="15sp"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/travellersCount_HotelBreakUp_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/confirmation_HotelBreakUp_TextView"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="end"
+        android:text=""
+        android:textColor="@color/save_pink"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/travellers_HotelBreakUp_TextView"
+        android:layout_marginTop="7.5dp"
+        android:background="@color/dark_gray_text_color"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/netCharges_HotelBreakUp_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/net_charges"
+        android:textColor="@color/dark_gray_text_color"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/travellers_HotelBreakUp_TextView"
+        />
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/netChargesValue_HotelBreakUp_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/travellers_HotelBreakUp_TextView"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="end"
+        android:text=""
+        android:textColor="@color/save_pink"
+        android:textSize="15sp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/netCharges_HotelBreakUp_TextView"
+        android:layout_marginTop="7.5dp"
+        android:background="@color/dark_gray_text_color"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/taxRecovery_HotelBreakUp_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/netCharges_HotelBreakUp_TextView"
+        android:layout_marginTop="15dp"
+        android:text="@string/tax_recovery_charges"
+        android:textColor="@color/dark_gray_text_color"
+        android:textSize="15sp"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/taxRecoveryValue_HotelBreakUp_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/netCharges_HotelBreakUp_TextView"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="end"
+        android:text=""
+        android:textColor="@color/save_pink"
+        android:textSize="15sp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/taxRecovery_HotelBreakUp_TextView"
+        android:layout_marginTop="7.5dp"
+        android:background="@color/dark_gray_text_color"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/total_HotelBreakUp_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taxRecovery_HotelBreakUp_TextView"
+        android:layout_marginTop="15dp"
+        android:text="@string/total"
+        android:textColor="@color/dark_gray_text_color"
+        android:textSize="15sp"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/totalValue_HotelBreakUp_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/taxRecovery_HotelBreakUp_TextView"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="end"
+        android:text=""
+        android:textColor="@color/save_pink"
+        android:textSize="15sp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_search"
+                android:clickable="true"
+                android:orientation="vertical"
+                >
+
+
+    <RelativeLayout
+        android:layout_marginTop="70dp"
+        android:id="@+id/actionBarRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/side_padding"
+        android:paddingLeft="@dimen/side_padding"
+        android:paddingRight="@dimen/side_padding"
+        android:paddingStart="@dimen/side_padding"
+        android:paddingTop="@dimen/top_padding">
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/textHeadingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SEARCH_BY_AREA_LANDMARK_OR_HOTEL"
+            android:textColor="@color/gray_black"
+            android:textSize="@dimen/heading_txt_size"/>
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/locationSearchTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textHeadingTextView"
+            android:maxLines="1"
+            android:paddingTop="@dimen/x_small_padding"
+            android:text="@string/Search_Hotel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/destination_txt_size"/>
+
+        <ImageView
+            android:id="@+id/searchIconImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/locationSearchTextView"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="@dimen/common_padding_small"
+            android:src="@drawable/search_home"
+            tools:ignore="ContentDescription"/>
+
+        <View
+            android:id="@+id/loc_view"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/locationSearchTextView"
+            android:layout_marginTop="@dimen/common_padding_small"
+            android:background="@color/gray_black"/>
+
+        <RelativeLayout
+            android:id="@+id/dateRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loc_view"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_between">
+
+
+            <RelativeLayout
+                android:id="@+id/checkInDateRelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="35dp">
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/textCheckInTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Check_in"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray_black"
+                    android:textSize="@dimen/heading_txt_size"/>
+
+                <com.holidayme.widgets.MediumFontTextView
+                    android:id="@+id/checkInDateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textCheckInTextView"
+                    android:paddingTop="@dimen/common_padding_small"
+                    android:text="02"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/date_text_size"/>
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/checkInMonthTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/checkInDayTextView"
+                    android:layout_marginStart="@dimen/padding_day_month"
+                    android:layout_toEndOf="@+id/checkInDateTextView"
+                    android:text="May 2017"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/heading_txt_size"/>
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/checkInDayTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/checkInDateTextView"
+                    android:layout_alignBottom="@+id/checkInDateTextView"
+                    android:layout_alignStart="@+id/checkInMonthTextView"
+                    android:textColor="@color/gray_black"
+                    android:text="Mon"
+                    android:textSize="@dimen/heading_txt_size"/>
+
+                <View
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_alignEnd="@+id/checkInMonthTextView"
+                    android:layout_below="@+id/checkInDateTextView"
+                    android:background="@color/gray_black"
+                    android:paddingTop="@dimen/padding_normal"/>
+            </RelativeLayout>
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/nightCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/nightIconImageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/x_small_padding"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/nightIconImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/nights"
+                tools:ignore="ContentDescription"/>
+
+
+            <RelativeLayout
+                android:id="@+id/checkOutDateRelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                tools:ignore="RelativeOverlap">
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/textCheckOutTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Check_out"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray_black"
+                    android:textSize="@dimen/heading_txt_size"/>
+
+                <com.holidayme.widgets.MediumFontTextView
+                    android:id="@+id/checkOutDateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textCheckOutTextView"
+                    android:paddingTop="@dimen/common_padding_small"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/date_text_size"/>
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/checkOutMonthTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/checkOutDayTextView"
+                    android:layout_marginStart="@dimen/padding_day_month"
+                    android:layout_toEndOf="@+id/checkOutDateTextView"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/heading_txt_size"/>
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/checkOutDayTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/checkOutDateTextView"
+                    android:layout_alignBottom="@+id/checkOutDateTextView"
+                    android:layout_alignStart="@+id/checkOutMonthTextView"
+                    android:textColor="@color/gray_black"
+                    android:textSize="@dimen/heading_txt_size"/>
+
+                <View
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_alignEnd="@+id/checkOutMonthTextView"
+                    android:layout_below="@+id/checkOutDateTextView"
+                    android:background="@color/gray_black"
+                    android:paddingTop="@dimen/padding_normal"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/roomCountRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateRelativeLayout"
+            android:paddingTop="@dimen/padding_between">
+
+            <ImageView
+                android:id="@+id/roomIconImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icn_rooms"
+                tools:ignore="ContentDescription"/>
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/roomCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_day_month"
+                android:layout_toEndOf="@+id/roomIconImageView"
+                android:textColor="@color/gray_black"
+                android:textSize="@dimen/heading_txt_size"/>
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:id="@+id/adultCountTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/roomCountTextView"
+                android:layout_marginStart="@dimen/padding_day_month"
+                android:layout_toEndOf="@+id/roomIconImageView"
+                android:paddingBottom="8dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_adult_count"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/adultCountTextView"
+                android:background="@color/gray_black"/>
+
+
+        </RelativeLayout>
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/searchTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/roomCountRelativeLayout"
+            android:layout_marginTop="@dimen/top_padding"
+            android:gravity="center"
+            android:text="@string/letsgo"
+            android:padding="12dp"
+            android:background="@drawable/rounded_indexpage_buttons"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_search"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fullScreenBannerRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#99000000"
+        android:clickable="true"
+        android:padding="20dp"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/fullScreenBannerImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/crossBannerImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/fullScreenBannerImageView"
+            android:layout_alignTop="@+id/fullScreenBannerImageView"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:paddingEnd="13dp"
+            android:paddingTop="11dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icn_close"
+            tools:ignore="ContentDescription,RtlSymmetry"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/addRoomRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg2"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/bannerImageView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/checkBuildTextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:id="@+id/main_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_hotel"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icn_default_image_loading"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/layout_img"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#55000000">
+
+                <include
+                    android:id="@+id/rating_bar"
+                    layout="@layout/rating"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"/>
+
+                <com.holidayme.widgets.MediumFontTextView
+                    android:id="@+id/text_hotel_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/text_address"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="17sp"/>
+
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/text_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/rating_bar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text=""
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:id="@+id/backImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/icon_arrow_left"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <!-- add remove coupon code layout here-->
+            <RelativeLayout
+                android:id="@+id/layout_coupon_code"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_below="@+id/RelativeLayout1">
+
+                <RelativeLayout
+
+                    android:id="@+id/layout_apply_coupon_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/green"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/coupon_code_status_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_tick"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <Button
+                        android:id="@+id/btn_apply_coupon_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:tag="1"
+                        android:text="@string/Apply"
+                        android:textAllCaps="true"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+
+                    <com.holidayme.widgets.LightFontEditText
+                        android:id="@+id/edt_txt_coupon_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toStartOf="@+id/btn_apply_coupon_code"
+                        android:background="@color/apply_coupon_bg"
+                        android:gravity="center"
+                        android:hint="@string/coupon_code_type"
+                        android:inputType="textCapCharacters|textNoSuggestions"
+                        android:padding="9dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="#FF178E01"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/txt_payat_hote"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_padding"
+                    android:paddingRight="@dimen/small_padding"
+                    android:text="@string/pay_at_hotel_txt"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+
+                <include
+
+                    android:id="@+id/inlude_guest_detail"
+                    layout="@layout/guest_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_layout4"/>
+
+
+            <com.holidayme.activities.util.NonScrollListView
+                android:id="@+id/recycler_special_request"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/inlude_guest_detail"
+                android:background="@android:color/transparent"
+                android:divider="@android:color/transparent"/>
+
+
+
+            <include
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/paymentOptionRow"
+                layout="@layout/payment_option_row"
+                android:layout_below="@+id/recycler_special_request"
+                android:background="@color/white_gray"
+
+
+                />
+
+
+
+            <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/include_cod"
+                    layout="@layout/card_payment_row"
+                    android:layout_below="@+id/paymentOptionRow"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/small_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:paddingTop="16.67dp"
+                android:layout_below="@+id/include_cod"
+                android:layout_alignParentStart="true">
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/total_booking_amount"
+                    android:textStyle="bold"/>
+
+                <com.holidayme.widgets.MediumFontTextView
+                    android:id="@+id/billingAmountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="6.67dp"
+                    android:text=""
+                    android:textColor="@color/colorRed"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/txt_currency_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text=""
+                    android:textSize="12sp"/>
+
+                <!--  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:orientation="horizontal"
+                      android:paddingTop="6.67dp">-->
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/privacyPolicyTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                   />
+
+
+                <!--</LinearLayout>-->
+
+                <com.holidayme.widgets.MediumFontTextView
+                    android:id="@+id/txt_proceed_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg_red_rounded_button"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="BOOK NOW (AED 321.24)"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp"
+                    android:src="@drawable/ico_nortron"
+                    android:visibility="invisible"
+
+                    android:textSize="12sp"
+                    tools:ignore="ContentDescription" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout1"
+                android:background="@color/background_dark"
+                android:paddingLeft="@dimen/small_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:padding="4dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    tools:ignore="RelativeOverlap">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_lead_traveller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/special_request_selector"
+                        android:button="@android:color/transparent"
+
+                        />
+
+                    <com.holidayme.widgets.LightFontTextView
+                        android:id="@+id/txt_lead_traveller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/travelling"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+                     />
+
+
+                </LinearLayout>
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/txt_amt_dsc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="5dp"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+
+                <com.holidayme.widgets.MediumFontTextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/txt_amt_dsc"
+                    android:paddingBottom="@dimen/common_padding_small"
+                    android:paddingTop="5dp"
+                    android:paddingRight="@dimen/side_padding"
+                    android:paddingStart="18dp"
+                    android:text="@string/Staycation_Traveller"
+                    android:textAllCaps="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/layout_coupon_code"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_left_large"
+                android:paddingLeft="@dimen/side_padding"
+                android:paddingRight="@dimen/side_padding"
+                android:paddingStart="@dimen/side_padding"
+                android:paddingTop="@dimen/padding_normal">
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/toolbar_horizontal_padding">
+
+                    <com.holidayme.widgets.MediumFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/amount_payable"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        />
+
+                    <com.holidayme.widgets.MediumFontTextView
+                        android:id="@+id/txt_hotel_payamt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:text="AED 321.24"
+                        android:textColor="@color/colorRed"
+                        android:textSize="16sp"
+                       />
+
+                    <com.holidayme.widgets.LightFontTextView
+                        android:id="@+id/txt_amt_before_coupon_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="12dp"
+                        android:layout_toStartOf="@+id/txt_hotel_payamt"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:textColor="@color/off_white"
+                        android:textSize="12sp"
+                        tools:ignore="RelativeOverlap" />
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="7dp"
+                android:paddingLeft="@dimen/side_padding"
+                android:paddingRight="@dimen/side_padding"
+                android:paddingStart="@dimen/side_padding"
+                android:paddingTop="@dimen/small_padding"
+                android:layout_below="@+id/img_hotel"
+                android:layout_alignParentEnd="true">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/small_padding">
+
+                    <com.holidayme.widgets.LightFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/Check_In"
+                        android:textColor="@color/off_white"
+                        android:textSize="12sp"/>
+
+                    <com.holidayme.widgets.MediumFontTextView
+                        android:id="@+id/txt_checkin_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/x_small_padding"
+                        android:text=""
+                        android:textColor="@color/off_white"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    tools:ignore="RelativeOverlap">
+
+                    <com.holidayme.widgets.LightFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/Check_out"
+                        android:textColor="@color/off_white"
+                        android:textSize="12sp"/>
+
+                    <com.holidayme.widgets.MediumFontTextView
+                        android:id="@+id/txt_checkout_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/x_small_padding"
+                        android:text=""
+                        android:textColor="@color/off_white"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/dayCountView"
+                    android:layout_width="1dp"
+                    android:layout_height="8dp"
+                    android:layout_alignStart="@+id/dividerNightCountView"
+                    android:layout_marginTop="@dimen/padding_normal"
+                    android:background="@color/value_deal_bg"/>
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/txt_night_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dayCountView"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:textColor="@color/off_white"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+
+                <View
+                    android:id="@+id/dividerNightCountView"
+                    android:layout_width="1dp"
+                    android:layout_height="8dp"
+                    android:layout_below="@+id/txt_night_count"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/value_deal_bg"
+                    android:paddingTop="7dp"/>
+
+                <View
+                    android:id="@+id/dateInfoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/linear_layout"
+                    android:background="@color/value_deal_bg"/>
+
+
+
+                    <com.holidayme.widgets.MediumFontTextView
+                        android:id="@+id/booking_policy_lable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/booking_policy"
+                        android:visibility="gone"
+                        android:paddingTop="@dimen/small_padding"
+                        android:layout_below="@+id/dateInfoView"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/bookingPolicyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:visibility="gone"
+                    android:text=""
+                    android:layout_below="@+id/booking_policy_lable"
+                    android:textSize="14sp"/>
+                <View
+                    android:id="@+id/priceInfoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/bookingPolicyTextView"
+                    android:layout_marginTop="@dimen/small_padding"
+
+                    android:layout_marginBottom="@dimen/small_padding"
+                    android:background="@color/value_deal_bg"/>
+
+                <LinearLayout
+                    android:id="@+id/relative_layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/priceInfoView"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:paddingBottom="@dimen/toolbar_horizontal_padding"
+                    android:paddingTop="@dimen/toolbar_horizontal_padding">
+
+                    <!--<com.holidayme.widgets.MediumFontTextView-->
+                        <!--android:id="@+id/txt_inclusion"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.63"-->
+                        <!--android:text="@string/inclusion"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:textColor="@color/blue"-->
+                        <!--android:textSize="12sp"/>-->
+
+                    <com.holidayme.widgets.MediumFontTextView
+                        android:id="@+id/txt_cancelation_policy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:text="@string/Cancellation_Policy_tab"
+                        android:textColor="@color/light_blue"
+                        android:layout_weight="1"
+                        android:textSize="14sp"/>
+
+                    <com.holidayme.widgets.MediumFontTextView
+                        android:id="@+id/txt_fair_brakeup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:layout_marginStart="@dimen/margin_left_large"
+                        android:text="@string/fare_breakup"
+                        android:textColor="@color/light_blue"
+                        android:layout_weight="1"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/customborder"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/txt_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/back_text"
+            android:textSize="16sp"/>
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/txt_booking_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text=""
+            android:textColor="@color/back_text"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_scroll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layout_scroll1"
+        android:background="@drawable/customborder_top"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/txt_guest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/back_text"
+            android:textSize="16sp"/>
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/txt_guest_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text=""
+            android:textColor="@color/back_text"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/phone2"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

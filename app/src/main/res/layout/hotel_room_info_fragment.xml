@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@drawable/custom_tab_indicator_divider" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/custom_tab_indicator_divider" />
+
+
+
+        <ListView
+            android:id="@+id/roomListListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2.5dp"
+            android:background="@color/staycation_theme"
+            android:divider="@null"
+            android:scrollbars="none"
+            >
+
+        </ListView>
+
+        <View
+            android:layout_width="230dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+
+            />
+
+
+</LinearLayout>

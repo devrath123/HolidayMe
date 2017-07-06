@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.holidayme.widgets.MediumFontTextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/Hotel"
+        android:textColor="@color/save_pink"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/city"
+        android:drawablePadding="5dp"
+        android:visibility="visible"
+
+        />
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingStart="25dp"
+        android:maxLines="1"
+        android:text=""
+        android:gravity="right"
+        android:textSize="12sp"
+
+        android:textColor="@color/black"
+
+
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,697 @@
+<resources>
+    <string name="app_name">HolidayMe</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_select_language">SelectLanguageActivity</string>
+    <string name="title_activity_registration">Registration</string>
+
+    <!--Home-->
+    <string name="Home">Home</string>
+    <string name="hotel">Hotels</string>
+    <string name="Term_of_Use">Term of Use</string>
+    <string name="Privacy_policy">Privacy Policy</string>
+
+    <!-- Facebook  String QA Id-->
+    <!--
+    <string name="facebook_app_id" translatable="false">521334141388797</string>
+    <string name="ga_app_tracker_id" translatable="false">UA-82271944-1</string>-->
+    <!--live-->
+    <string name="facebook_app_id" translatable="false">1708056119434616</string>
+    <string name="ga_app_tracker_id" translatable="false">UA-75772848-1</string>
+    <!-- Drawer String-->
+
+    <string name="EN">EN</string>
+    <string name="default_lang">EN</string>
+    <string name="AR">AR</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="login">Login</string>
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_profile">My Profile</string>
+    <string name="nav_item_terms_of_use">Terms of Use</string>
+    <string name="nav_item_booking">My Bookings</string>
+    <string name="nav_item_privacy_policy">Privacy Policy</string>
+    <string name="nav_item_contact_us">Contact Us</string>
+
+    <string name="log_out">Log Out</string>
+    <!--<string name="log_out_msg">You Have Successfully Logged Out!</string>
+    <string name="log_in_msg">You Have Successfully Logged In!</string>-->
+
+    <!-- Drawer String-->
+    <!-- Select language Activity -->
+    <string name="save_and_continue">SAVE  AND CONTINUE</string>
+    <string name="Skip">SKIP</string>
+
+
+    <!-- HolidayMe Login Activity -->
+    <!--    <string name="please_enter_EmailID">Please Enter Registered Email Address.</string>
+    <string name="please_enter_password">Please Provide Password</string>
+    <string name="Password">Enter Password</string>
+    <string name="Sign_in">Sign In</string>
+    <string name="Forgot_password">Forgot Password</string>
+    <string name="Sign_up">Sign Up</string>-->
+    <string name="Skip_Login">Skip Login</string>
+    <!--<string name="Login_Error_try_after_sometime">Login Error Try After Sometime</string>
+    <string name="Login_Cancel">Login Cancel</string>
+    <string name="or">or</string>-->
+
+    <!-- custom dialog -->
+
+    <string name="ok">OK</string>
+
+    <string name="please_check_your_internet_connection">Please Check Your Internet Connection.</string>
+    <!-- Error handling -->
+    <string name="server_is_not_responding_please_try_after_some_time">There appears to be some problem in communicating with the server. Please try after some time.</string>
+
+    <!--select Language Activity-->
+
+    <string name="English">ENGLISH</string>
+    <string name="ARABIC">العربية</string>
+
+    <!--select Language Activity-->
+
+    <!--<string name="Please_enter_your_email_ID">Please Enter Your Email ID</string>-->
+    <!-- <string name="The_Password_must_be_at_least_6_characters_long.">The Password Must be at Least 6 Characters Long.</string>
+    <string name="The_password_and_confirmation_password_do_not_match.">The Password and Confirmation Password do not match.</string>
+   -->
+    <string name="Please_enter_a_valid_email_ID">Please Enter Valid Email ID</string>
+    <!--<string name="Please_enter_password"> Please Enter Password</string>-->
+
+
+    <!--Hotel Search Activity-->
+
+    <string name="letsgo">Search</string>
+    <string name="nearme">Near me</string>
+    <string name="Check_in">Check In</string>
+    <string name="Check_out">Check Out</string>
+    <string name="addroom">Add Room</string>
+    <!--<string name="Age">Age</string>-->
+    <string name="Invalid_destination_Please_select_valid_destination">Invalid destination. Please Select Valid Destination..</string>
+    <string name="date_difference"> Difference Between From and To Date Cannot be Greater Than 25.</string>
+    <string name="sorry_unable_to_process_your_request_please_try_after_some_time"> Sorry ,Unable To Process Your Request Please Try After Some Time.</string>
+    <string name="Search_Hotel"> Search City or Hotel Name </string>
+    <string name="Search_listing">Search by Hotel Name</string>
+
+    <!-- hotel Listing !-->
+
+    <string name="no_hotel_available"> Unfortunately, No Hotel is available for the given destination for the given dates. Please change either the destination or travel details, Click ok to try again</string>
+    <!--<string name="no_hotel_available_filter_again"> Unfortunately, no Hotel is available for the selected Filter . Please change Filter</string>
+    <string name="Loading">Loading...</string>-->
+    <string name="Kids"> Kids</string>
+    <string name="Kid"> Kid</string>
+    <string name="Room">Rooms</string>
+    <string name="room">Room</string>
+    <!--<string name="Night">Night(s)</string>-->
+    <string name="payat_hotel">PAY AT HOTEL</string>
+
+
+    <!-- hotel Details!-->
+    <string name="no_anemites_found"> No Amenities found</string>
+    <string name="no_review_found">No Reviews found</string>
+    <!--<string name="rooms_tab">Rooms</string>
+    <string name="details_tab">Details</string>
+    <string name="review_tab">Reviews</string>
+    <string name="amenities_tab">Amenities</string>-->
+
+    <!-- Forgot password!-->
+    <!--<string name="forgot_password_message">Password has been sent to your email address</string>
+    <string name="Please_enter_register_email_address">Please Enter Registered Email Address</string>
+    <string name="Submit">Submit</string>-->
+    <string name="Cancel">Cancel</string>
+    <!--<string name="Forgot_Password">Forgot Password</string>-->
+
+    <!--hotel room-->
+    <!--<string name="Conformation_page_Loading">Conformation page Loading...</string>
+    <string name="payment_page_Loading">payment page Loading...</string>-->
+
+    <!-- GPS -->
+    <string name="you_need_to_switch_on_your_location_settings_for_tab_search">HolidayMe Needs Access To Your Location.Please Turn On Location Access.</string>
+    <!--  <string name="Please_wait_while_we_fetch_your_current_location"> Please Wait While We Fetch Your Current Location</string>-->
+    <string name="unable_to_fetch_your_current_location">Unable To Access Your Location.</string>
+
+    <string name="city_not_found">Unable To Find Your City.</string>
+
+
+    <!--<string name="area_prompt">Select Area.</string>-->
+
+
+    <!--radio button in fragmrnt Supriya-->
+
+    <string name="price">Price</string>
+    <string name="location">Location</string>
+    <!--<string name="Rate">Rating</string>-->
+    <string name="trip_advisor">Trip Advisor</string>
+    <!--<string name="theme">Theme</string>-->
+    <string name="aminities">Amenities</string>
+    <string name="details">Details</string>
+
+
+    <!--hotel-->
+    <string name="Hotel_name">Radission</string>
+    <!--<string name="per_night">Per Room Per Night</string>-->
+
+    <!--<string name="book">BOOK</string>-->
+    <string name="Reviews"> Reviews </string>
+    <!--Room details-->
+
+    <!--<string name="price_for">Price for</string>
+    <string name="room_for">Room For</string>-->
+    <string name="nights">Nights</string>
+    <string name="night">Night</string>
+    <string name="max_adults">Max Adults:</string>
+    <string name="includes">Includes :</string>
+    <string name="Non_Refundable">Non Refundable</string>
+    <string name="Free_Cancellation">Free Cancellation</string>
+    <!-- <string name="Not_applicable">Taxes Applicable</string>-->
+    <string name="Taxes_included">Taxes Inclusive</string>
+    <string name="Taxes_not_included">Includes All Applicable Taxes</string>
+    <string name="NA">Room Only</string>
+    <string name="Refundable">Refundable</string>
+    <string name="Book_now">BOOK NOW</string>
+    <!-- select language -->
+    <string name="select_currency"> SELECT CURRENCY </string>
+
+    <!-- map -->
+
+
+    <string name="google_map_key" translatable="false">AIzaSyBWCaPEnHRL8rXWS5iZt_EBv6DzqYRgSeo</string>
+
+    <!--auto complete-->
+    <string name="Hotel">Hotels</string>
+    <!-- <string name="hotel_name">Hotel Name</string>-->
+    <string name="city">City</string>
+
+    <!--filter adapter-->
+    <!-- <string name="hotel_chain">Hotel Chain</string>
+  <string name="number">100</string>-->
+
+    <!--Room Rate brake Up Adapter-->
+    <string name="Rooms">Rooms</string>
+    <string name="Totals">Totals</string>
+    <string name="Adults">Adults</string>
+    <string name="Adult">Adult</string>
+
+
+    <!--Filter-->
+    <string name="Price">Price</string>
+    <!-- <string name="Location">Location</string>-->
+    <string name="Rating">Star Rating</string>
+    <!--<string name="Trip_Advisor">Trip Advisor</string>-->
+    <string name="Theme">Theme</string>
+    <string name="Amenities">Amenities</string>
+    <string name="Hotel_chain">Hotel chain</string>
+    <string name="Select_your_preferred_Amenities">Select Amenities</string>
+    <string name="Select_your_preferred_Hotels">Select Hotel Chain</string>
+    <string name="Select_your_preferred_location">Select Preferred Location</string>
+    <string name="Select_your_preferred_Price">Choose Price Range</string>
+    <string name="Select_your_preferred_Theme">Select Preferred Theme</string>
+    <string name="Select_your_preferred_Rating">Select Star Rating</string>
+    <string name="Select_your_prefered_trip_advisor_rating">Select TA Rating</string>
+
+
+    <!--forgot password-->
+    <!-- <string name="Your_Email">Enter Email Address</string>-->
+
+    <!--Hotel Detail Info-->
+
+
+    <string name="HOTEL_POLICY_OF">Hotel Policy</string>
+    <string name="DETAILS">Hotel Detail</string>
+
+    <!--Hote Review-->
+    <string name="Traveller_rating">Traveler Rating</string>
+    <string name="Excellent">Excellent</string>
+    <string name="Very_good">Very Good</string>
+    <string name="Average">Average</string>
+    <string name="Poor">Poor</string>
+    <string name="Terrible">Terrible</string>
+    <string name="See_reviews_for">See Reviews For</string>
+    <string name="Families">Families</string>
+    <!--<string name="Couples">Couples</string>
+    <string name="Solo">Solo</string>
+    <string name="Business">Business</string>-->
+    <string name="Rating_summary">Rating Summary</string>
+    <!--<string name="Sleep_Quality">Sleep Quality</string>
+    <string name="Service">Service</string>
+    <string name="Value">Value</string>-->
+    <string name="Recent_Reviews">Recent Reviews</string>
+    <string name="reviews_from_our_community">Reviews From Our Community</string>
+
+
+    <!--Hotel Book Comfermation-->
+    <string name="Room_Booked_for">Room Booked For</string>
+    <string name="Congratulation">Congratulation! your hotel has been successfully confirm</string>
+    <string name="Thank_you">Thank you for choosing HolidayMe as your travel partner.</string>
+    <string name="Booking_id">Booking id: </string>
+    <string name="Confirmation_No">Confirmation No. </string>
+    <string name="Check_In">Check In</string>
+    <string name="Check_Out">Check Out</string>
+    <string name="Rate_Break_Up">Rate Break Up</string>
+    <string name="Gross_total">Gross Total</string>
+    <string name="Dicount">Discount</string>
+    <string name="Grand_Total">Grand Total</string>
+    <string name="Payment_failure_1">Unfortunately, your attempt at online payment has failed and your booking for </string>
+    <string name="Payment_failure_2">, was unsuccessful.Kindly review your payment details or try again using a different payment method</string>
+    <string name="booking_fail_1">We are sorry to inform you that, for your</string>
+    <string name="booking_fail_2">, payment has been charged even though the booking has unfortunately failed..We apologize for the inconvenience caused. Our team will contact you within a couple of hours for assistance</string>
+    <string name="pay_at_hotel_confirm_1">Your booking of </string>
+    <string name="pay_at_hotel_confirm_2"> has been tentatively accepted, pay the whole amount directly at the hotel </string>
+
+
+    <!-- Santosh-->
+    <!-- Registration-->
+    <!--<string name="Registration">Registration</string>
+    <string name="Registration_successful">Registration successful</string>
+-->
+    <!-- supriya -->
+
+    <string name="Cancellation_Policy"><u>Cancellation Policy</u></string>
+    <string name="Cancellation_Policy_tab">Cancellation Policy</string>
+    <string name="room_info">Room Information</string>
+
+    <!-- Sort -->
+    <string name="By_Popularity">By Popularity</string>
+    <string name="By_Price">By Price</string>
+    <string name="By_Star_Rating">By Star Rating</string>
+    <string name="By_Trip_Advisor_Rating">By Trip Advisor</string>
+    <string name="Apply">Apply</string>
+    <string name="Clear">Clear</string>
+    <string name="Filter">Filter</string>
+    <!--<string name="Map">MAP</string>-->
+    <string name="Sort">SORT</string>
+    <!--<string name="Order_by">Order by</string>-->
+    <string name="Popularity">Popularity</string>
+
+    <!-- extra-->
+    <!--<string name="we_have_been_unable_to_register_as_the_given_email_address_is_already_present_in_the_database"> we have been unable to register as the given email address is already present in the database</string>-->
+    <!--<string name="Coming_soon"> Coming Soon</string>
+    <string name="Search_hotels">Search hotels</string>
+    <string name="no_hotels_found">No Hotels Found</string>-->
+    <string name="Hotel_booking">Hotel booking</string>
+
+    //now add
+
+
+    <string name="data_not_found">Data Not Found</string>
+    <string name="Done">Done</string>
+
+    <!--My profile-->
+    <string name="First_Name">First Name</string>
+    <string name="Last_Name">Last Name</string>
+    <string name="Email_Address">Email Address</string>
+    <string name="Display_Name">Display Name</string>
+    <string name="Mob_No">Mobile Number</string>
+    <string name="City">City</string>
+    <string name="Area">Area</string>
+
+    <!--<string name="State">State</string>
+    <string name="Country">Country</string>
+    <string name="Postal_code">Postal Code</string>
+    <string name="Address">Address</string>
+    <string name="Edit_Profile">Edit Profile</string>-->
+
+    <!--My booking -->
+    <string name="Date">Date :</string>
+    <string name="Check_In_Date">Check In Date</string>
+    <string name="Check_out_date">Check out date</string>
+    <string name="Billing_Amount">Billing Amount</string>
+    <string name="no_booking"> No Booking Available</string>
+    <string name="My_profile">My Profile</string>
+    <string name="My_Booking">My Booking</string>
+    <!-- <string name="Please_enter_first_name">Please Enter First Name</string>
+    <string name="Please_enter_display_name">Please Enter Display Name</string>
+    <string name="Profile_sucessfully_update">Your Profile Is Successfully Update</string>
+    <string name="call">Call</string>
+    <string name="toll_free_no">Please call us on + 971 4 3650123 to Book This hotel</string>
+    <string name="contact_no">+ 971 4 3650123</string>
+    <string name="contact_us_no">+971 44 298 989</string>
+    <string name="contact_us_no_sa">+(966)920002963</string>-->
+    <string name="Unavilable">Unavailable</string>
+    <string name="yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Please_Login_First_profile">Please Log-In To View Your Profile.</string>
+    <string name="Please_Login_First_booking">Please Log-In To View Your Bookings.</string>
+    <!-- <string name="Value_deal">VALUE Deal</string>-->
+
+
+    <!--night-->
+    <string name="one_night">night</string>
+    <string name="two_night">nights</string>
+    <string name="three_ten_night">nights</string>
+    <string name="eleven_and_above_night">يلة"</string>
+
+    <!--room-->
+    <string name="one_room">room</string>
+    <string name="two_room">rooms </string>
+    <string name="three_ten_room">rooms</string>
+
+    <!--26_nov_2015-->
+    <!-- <string name="msgConfirmedHotel">Congratulations! Your Hotel has been successfully confirmed. The summary of your trip, along with all the details, has been provided below.</string>
+    <string name="msgTransactionFailed">Your attempt at online payment failed because we were unable to process your payment. Kindly review your payment details or try again through a different payment method.</string>
+    <string name="msgAppology">We apologize for the inconvenience caused. Our team will contact you shortly for further assistance.</string>
+    <string name="msgUnfortunatelyYourAttemptToBookHotelNameWasUnsuccessful">Unfortunately, your attempt to book {0}, was unsuccessful.</string>
+    <string name="msgKindlyReviewYourPaymentDetailsorTryAgainUsingADifferentPaymentMethod">Kindly review your payment details or try again using a different payment method.</string>
+    <string name="msgYouMayAlsoContactOurCustomerSupportAtForFurtherAssistance">You may also contact our customer support at +971 4 3650123 for further assistance.</string>
+    <string name="msgThankYouForChoosingHolidayMe">Thank you for choosing HolidayMe.</string>
+    <string name="msgBookingFailedWithSupplier">We are sorry to inform you that the booking for Booking ID {0} payment has been charged even though the booking failed.</string>
+
+    <string name="msgYourBookingIsPendingWithUs">Your booking is pending with us, our customer care executive will get back to you within next 24 hours.</string>
+    <string name="msgBookingFailed">We are sorry to inform you that your booking has failed.</string>
+    <string name="msgThankYou">Thank you for allowing Holidayme.com to become a part of your travelling plans. We take pride in providing our customers with an easy and comfortable booking experience. We hope to be of help with your travel plans again, soon.</string>
+    <string name="msgBookingConfirmation">This is your booking confirmation.  A printed copy of the voucher must be presented to the service provider at pick up point.</string>
+    -->
+    <string name="cod_msg">"Your booking is pending with us, our customer care executive will get back to you within next 24 hours."</string>
+
+    <string name="No_room_available">"Unfortunately No Rooms Are Available For The Selected Hotel."</string>
+
+    <string name="location_no_rooms_available">"Unfortunately no rooms are available for selected hotel. Would you like to search more hotels in same city ? "</string>
+
+
+    <string name="hotel_address">Hotel Address</string>
+    <!--<string name="All_Areas">All Areas</string>
+    <string name="limit_title">Maximum 9 passengers</string>-->
+    <string name="limit_restriction">Sorry! You cannot add more than 24 passengers</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="year">1<br>yrs</br></string>
+    <string name="reset_filter">Reset Filters</string>
+    <string name="no_filter_hotels_found">No hotels found for the selected filters</string>
+    <string name="no_filters_hotels_title">Filter Hotels</string>
+    <string name="Reset_filter">Reset Filter</string>
+    <string name="Network_not_avilable">Network Not Available</string>
+    <!--<string name="Your_profile_successfuly_update">Profile submitted successfully</string>-->
+    <string name="Sorry_unable_to_create_maps">Sorry! unable to create maps</string>
+
+    <string name="welcome_guest">Welcome Guest</string>
+    <string name="tap_here_to_login">Tap here to login</string>
+    <string name="Asia_Pacific">Asia and Pacific</string>
+    <string name="EUROPE">EUROPE</string>
+    <string name="AMERICAS">AMERICAS</string>
+    <string name="AFRICA_MIDDLE_EAST">AFRICA AND MIDDLE EAST</string>
+    <!--<string name="Container_id">GTM-MJMZF8</string>-->
+    <string name="lblThisBookinghasBeenCancelled">This booking has been cancelled.</string>
+
+    <string name="Above_17_years">Above 17 years</string>
+    <string name="Below_17_years">0 to 17 years</string>
+    <string name="Age_of_child_1">CHILD 1</string>
+    <string name="Age_of_child_2">CHILD 2</string>
+    <string name="SEARCH_BY_AREA_LANDMARK_OR_HOTEL">SEARCH BY CITY, COUNTRY OR HOTEL</string>
+    <string name="CheckInInstructions">Check-In Instructions</string>
+    <!--<string name="Continue">Continue</string>
+    <string name="payat_hote_msg">You can book now and pay at hotel for the selected room.</string>-->
+    <string name="laguage">Select Language</string>
+    <string name="currency">Select Currency</string>
+    <string name="price_for_room_includes">Price For Room Includes</string>
+    <!--contact us dai and fragment-->
+
+    <!--<string name="contact_us_dai">call +971 44 298 989</string>
+    <string name="contact_us_no_sa_dai"> call +(966)920002963</string>-->
+    <string name="contact_us_title">We\'d love to hear from you</string>
+
+
+    <string name="cantact_us_call1">Worldwide +97144358431</string>
+    <!--<string name="cantact_us_call2">KSA Tollfree +(966) 920002963</string>-->
+
+    <string name="contact_dai">Need help\? Give us a call</string>
+
+    <string name="hotel_bookings">Hotel Booking</string>
+    <string name="coupon_code">Coupon Code Copied</string>
+
+
+    <!--rateus dailog-->
+    <string name="rate_us_title">Rate HolidayME</string>
+    <string name="rate_us_msg">If you enjoy using HolidayMe, please take a moment to rate it.</string>
+    <string name="rate_now">Rate It Now</string>
+    <string name="remind_later">Remind Me Later</string>
+    <string name="no_thanks">No Thanks</string>
+
+    <!--force update msg-->
+    <string name="upgrade_app_two_button_msg">A new version of HolidayMe is available on the play store. Do you wish to update?”</string>
+    <!-- <string name="upgrade_app_one_button_msg">A new version of the HolidayMe App is available now. Please update to get new offers, better deals and more options.</string>
+    <string name="update_one_btn">UPDATE NOW</string>-->
+    <string name="update_two_btn">UPDATE NOW</string>
+    <string name="LATER">MAYBE LATER</string>
+    <string name="payment_info">At HolidayMe, all purchases are covered by the 100% Buyer Protection Guarantee. This ensures genuine products, secure payments and easy refunds. So, you can shop without worry on HolidayMe, knowing that we\'ve got you covered.\* T&amp;C Apply.</string>
+    <string name="payment_info_title">100% Buyer Protection</string>
+
+
+    <!--booking page validation-->
+    <string name="phone_validation">Please enter valid Phone Number.</string>
+    <string name="cvv_validation">Please enter valid CVC/CVV number.</string>
+    <string name="creditcard_validation">Please enter valid Credit Card Number.</string>
+
+    <string name="apply_coupon">APPLY</string>
+    <string name="remove_coupon">RE-APPLY</string>
+    <string name="coupon_code_type">TYPE COUPON CODE HERE</string>
+    <string name="traveller">Travellers</string>
+    <string name="Traveller">Traveler Details</string>
+    <string name="Staycation_Traveller">Traveler Details</string>
+    <string name="Room_Type">Room Type</string>
+    <string name="pay_securely">PAY SECURELY</string>
+    <string name="travelling">I\'m Travelling</string>
+    <string name="hotel_voucher_text">Your hotel voucher has been sent to these contact details. Please use the same name as in government ID/ passport.</string>
+    <string name="payment_details_text">Payment Details</string>
+    <!--<string name="credit_card">Credit Card</string>
+    <string name="cash_on_delivery">Cash on delivery</string>-->
+    <string name="no_card_charge">Your card will not be charged. We just need it to guarantee your reservation.</string>
+    <string name="total_booking_amount">Total Booking Amount</string>
+
+    <!-- <string name="terms_of_use">Terms of Use</string>
+    <string name="terms_acceptance">By proceeding you accept the </string>-->
+    <string name="card_holder_name">Card Holder Name</string>
+    <string name="cvv">CVC/CVV</string>
+    <!--
+    <string name="street_name">Street Name</string>
+    <string name="building_name">Building Name</string>
+    <string name="floor_number">Floor No.</string>
+    <string name="apartment_number">Apartment No.</string>
+    <string name="landmark">Nearest Landmark.</string>-->
+    <string name="fare_breakup">Fare Breakup</string>
+    <string name="inclusion">Inclusions</string>
+    <string name="first_name">First Name/Middle Name</string>
+    <string name="special_request">Special Request</string>
+
+    <string name="name_error_msg1">Please enter </string>
+    <string name="name_error_msg2" formatted="false">Please enter valid %s. It should not contain any special characters or numbers.</string>
+    <string name="name_error_msg3">Please enter more than 2 characters in your </string>
+
+
+    <string name="booking_page_amount_total_text1">You will pay</string>
+    <string name="booking_page_amount_total_text2">in the property\'s currency (exchange rate may vary):</string>
+    <string name="pay_at_hotel_txt">No Payment needed today. You\'ll pay during your stay.</string>
+
+    <string name="pay_full_amt">Pay Full Amount</string>
+    <!--<string name="Cod_not_avilable">Your current selection is an Instant Purchase product and requires an Online Payment. Continue Paying by Card</string>-->
+
+    <string name="billing_currency_text1_new" formatted="false">Billing amount in %s is %s. Bank charge may apply on currency conversion.</string>
+
+    <string name="applied">Applied</string>
+    <string name="txes_fees">Taxes and Fees</string>
+    <string name="proceed_to_book">Proceed to Book</string>
+    <string name="try_again">Try Again</string>
+    <string name="booking_failed">Booking Failed</string>
+    <string name="expire_date_validation">Please select valid expiry month and year.</string>
+    <string name="Avrage_night_brake">Average Night Breakup</string>
+    <string name="Tax">Taxes</string>
+    <string name="coupon_code_validation">Please Enter Coupon code</string>
+    <!--<string name="please_wait">Please wait....</string>-->
+    <string name="card_charge">The credit card WILL BE CHARGED IMMEDIATELY FOR THE FULL AMOUNT of the reservation on the Booking Page.</string>
+    <string name="creditcard_type_validation">Please use Master or VISA card for booking.</string>
+    <string name="save">Save</string>
+    <string name="no_filter_available">Sorry, there are no filters available</string>
+    <!--<string name="title_activity_maps">Map</string>-->
+    <string name="travel_detail_msg">Traveller Details Not Available </string>
+
+
+    <!--<string name="term_and_condition">T&amp;C</string>
+    <string name="cod_text">Cash On Delivery is only payable at: Abu Dhabi, dubai, Sharjah and Riyadh. Applicable currencies: AED and SAR.</string>-->
+    <string name="to">to</string>
+    <string name="other">Others</string>
+    <!--<string name="and">and</string>-->
+    <string name="aminity_note">Note: Some Amenities may be chargeable at the Hotel. </string>
+    <string name="common_error_msg">Oops! There seems to be some issue here. Please try again in some time.</string>
+
+    <string name="request_cancellation">Request Cancellation</string>
+    <string name="view">View</string>
+    <string name="request_cancellation_massage">Are you sure you want to cancel booking??</string>
+    <string name="request_cancellation_info" formatted="false">Thank you for your request. Your cancellation request reference number is %s.Our support team will be calling you shortly </string>
+    <string name="send_email_to_user_massage">Thank you for your request Email with booking voucher has been sent to email id</string>
+    <string name="email">Email</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="Confirmed">Confirmed</string>
+    <string name="loging_header_text">Sign In / Sign Up</string>
+
+    // contact us dial numbers
+
+    <string name="uae_toll_free_number">800454545</string>
+    <string name="saudi_toll_free_number">920002963</string>
+    <string name="worldwide_toll_free_number">+97144358431</string>
+
+    // contact us dial text
+
+    <string name="uae_toll_free_text">UAE Toll free : 800454545 </string>
+    <string name="saudi_toll_free_text">Saudi Toll Free : 920002963 </string>
+    <string name="worldwide_toll_free_text">Worldwide : </string>
+
+    <string name="what_is_visa_checkout">What is Visa Checkout ?</string>
+    <string name="visa_checkout_short_text">Visa Checkout helps to make your online payments simpler and more enjoyable.</string>
+    <string name="visa_checkout_long_text">Visa Checkout helps to make your online payments simpler and more enjoyable.Simply enter your username and password and proceed through your online payment with a single account that can be used across all your devices."No need to re-enter your card number or address. And you can store and
+    use all your credit or debit cards.</string>
+
+    <string name="what_is_masterpass">What is Masterpass ?</string>
+    <string name="master_pass_short_text">Masterpass is a simple, convenient, trusted digital wallet for faster safe shopping at thousands of Online Merchants.</string>
+    <string name="master_pass_long_text">Masterpass is a simple, convenient, trusted digital wallet for faster safe
+shopping at thousands of Online Merchants.Masterpass wallet makes online shopping safe and easy by storing your payment and shipping information in one secure place. Masterpass by
+Mastercard is free, easy to set up, and available anywhere you see the Masterpass button.</string>
+
+    <string name="proceed_with_visa_checkout">Proceed with Visa Checkout</string>
+    <string name="proceed_with_master_pass">Proceed with Masterpass</string>
+
+    <string name="card_terms">By proceeding you accept the T&amp;C and Privacy Policy</string>
+    <string name="visa_terms">By Clicking Proceed with Visa Checkout, you agree to HolidayMe Terms &amp; Conditions, Booking Policy, Cancellation Policy and Visa Checkout Terms."</string>
+    <string name="masterpass_terms">By Clicking Proceed with Masterpass, you agree to HolidayMe Terms &amp; Conditions, Booking Policy, Cancellation Policy and Masterpass Terms.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="cheese_ipsum">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue
+    cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian
+    bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber
+    cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese
+    the big cheese.</string>
+
+    <!-- Getawyas-->
+
+
+    <string name="nearest_mosque">Nearest Mosque</string>
+    <string name="nearest_shopping_mall">Nearest Shopping Mall</string>
+    <string name="nearest_halal_restaurant">Nearest Halal Restaurant</string>
+    <string name="getaways_title">Getaways</string>
+
+    <string name="Selling_Fast">Selling Fast</string>
+    <string name="kms">kms</string>
+    <string name="From">From</string>
+    <string name="near_you">Near you </string>
+
+    <!--  Staycation Detail  -->
+
+    <string name="select_tour_options">SELECT PACKAGES</string>
+    <string name="what_you_get"> What You Get</string>
+    <string name="overview">Overview</string>
+    <string name="read_more">Read More</string>
+    <string name="read_less">Read Less</string>
+    <string name="hotel_policies">Hotel Policies</string>
+    <string name="important">Important</string>
+    <string name="amenities">Amenities</string>
+    <string name="near_and_around">Near and Around</string>
+    <string name="provided_by_foursquare">Provided by foursquare</string>
+    <string name="view_all">View All</string>
+    <string name="policies">Policies</string>
+    <string name="reviews">Reviews</string>
+    <string name="book_now">Book Now</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_departure_date">Select Departure Date</string>
+    <string name="six_more">+6 more</string>
+    <string name="select_another_date">Select Another Dates</string>
+    <string name="hotel_rooms_are_unavailable" formatted="false">Unfortunately on %s hotel rooms are Unavailable. Kindly select another available dates.</string>
+
+    <!--  Staycation Calendar   -->
+
+    <string name="select_number_of_packages">SELECT NUMBER OF PACKAGES</string>
+    <string name="book_this_deal_for">Book this deal for </string>
+    <string name="available">Available</string>
+    <string name="available_on_request">Available On Request</string>
+    <string name="night_s">Night(s)</string>
+    <string name="need_help_with_booking">Need Help with Your Booking ?</string>
+    <string name="call_us_on">Call Us On: </string>
+    <string name="or">OR</string>
+    <string name="let_our_holiday_expert_call_you">LET OUR HOLIDAY EXPERT CALL YOU</string>
+    <string name="full_name">Full Name</string>
+    <string name="your_comments">Your Comments</string>
+    <string name="submit">SUBMIT</string>
+    <string name="sold_out">Sold Out</string>
+
+    // Getaways listing page
+
+    <string name="getways_title">Getaways</string>
+    <string name="sort_by">Sort by</string>
+    <string name="Select_categories">Select Categories</string>
+    <string name="Select_Distance">Select Distance</string>
+    <string name="start_distance">0-150 kms</string>
+    <string name="second_distance">151-300 kms </string>
+    <string name="middle_distance">301-450 kms</string>
+    <string name="end_distance">451 kms &amp; above </string>
+
+
+    // Getaway Booking Page
+
+    <string name="booking_policy">Booking Policy</string>
+    <string name="amount_payable">Amount Payable</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="card_details">Details</string>
+    <string name="card_payment">Card Payment</string>
+    <string name="visa_checkout">Visa Checkout</string>
+    <string name="master_pass">Masterpass</string>
+
+
+    // Getaway breakup page
+
+    <string name="rate_breakup">Rate Break Up</string>
+    <string name="per_package_cost">Per package cost</string>
+    <string name="number_of_packages">No.of Package(s)</string>
+    <string name="total_amount">Total Amount</string>
+
+    // GetawayBookingConfirmation page
+
+    <string name="success">Success</string>
+    <string name="failed">Failed</string>
+    <string name="payment_failed">Payment Failed</string>
+    <string name="unfortunately_payment_failed">Unfortunately your booking failed</string>
+    <string name="reff_number">Ref. No.</string>
+    <string name="important_info">Important Information</string>
+    <string name="cancellation_policy">Cancellation policy</string>
+    <string name="booking_email">Email</string>
+    <string name="call">Call</string>
+    <string name="try_payment_again">Try your payment again</string>
+    <string name="congrats_msg">Congratulations, %s Your booking is successful</string>
+    <string name="congrats_msg_hotel" formatted="false">Congratulations %s, \nYour booking is successful</string>
+    <string name="unfortunately_card_charged">Unfortunately your card was charged but booking failed</string>
+    <string name="transaction_could_not_be_processed">your transaction could not be processed</string>
+    <string name="sorry">Sorry</string>
+    <string name="bank_has_not_authorized">The bank has not authorized the transaction for following reason pick up card</string>
+    <string name="booking_in_process">Booking in process!</string>
+    <string name="payment_for_getaway">Payment for your Getaway</string>
+    <string name="payment_received_booking_in_process">has been received and your booking is in  process</string>
+
+
+    <string name="revert_shortly">We will revert shortly!</string>
+    <string name="alternatively" formatted="false">Alternately, please feel free to contact us on %s and we will be happy to assist you.</string>
+    <string name="thankyou_for_choosing">Thank you for choosing Holiday Me as your travel Partner.</string>
+    <string name="close">CLOSE</string>
+    <string name="request_submitted">Request Submitted</string>
+    <string name="total">Total</string>
+    <string name="filter_by">Filter By</string>
+    <string name="travellers">Travellers</string>
+    <string name="net_charges">Net Charges</string>
+    <string name="tax_recovery_charges">Tax Recovery Charges and Fees</string>
+
+    <string name="booking_policy_null">Booking policy is not available for this hotel</string>
+    <string name="Retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="less_ammenity">Less Amenities</string>
+
+    <string name="number_package">Package</string>
+    <string name="number_packages">Packages</string>
+
+    // Autocomplete fragment
+
+    <string name="nearMe">Near Me</string>
+    <string name="recent">Recent</string>
+
+    // Getaways index page short strings
+
+    <string name="getaways_actionbar_title">Getaways</string>
+    <string name="getaways_row_title">Getaways</string>
+
+
+</resources>
+

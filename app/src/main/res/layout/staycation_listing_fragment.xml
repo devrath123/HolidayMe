@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/staycation_theme"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/getawaysListHeader"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:padding="5dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/getawaysListBackPress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_back_black"
+            android:padding="10dp"
+            tools:ignore="ContentDescription" />
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/headerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/getaways_title"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+ <!--   <view
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/getawaysListHeader"
+        />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ListingRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/staycation_theme"
+        android:layout_below="@+id/getawaysListHeader"
+        />
+    <include
+        android:id="@+id/on_request_form"
+        layout="@layout/on_request_form"
+        android:visibility="gone"
+
+        />
+    <include
+        android:id="@+id/on_request_success"
+        layout="@layout/on_request_success"
+        android:visibility="gone"
+
+        />
+    <include
+        android:id="@+id/getawaysFilter"
+        android:visibility="gone"
+        layout="@layout/getaways_filter_include"
+        />
+    <ImageView
+        android:id="@+id/OnRequestActionButton"
+        android:layout_width="wrap_content"
+       android:layout_above="@+id/filterActionButton"
+        android:src="@drawable/phone"
+
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        tools:ignore="ContentDescription" />
+       <ImageView
+           android:id="@+id/filterActionButton"
+           android:layout_width="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:src="@drawable/filter"
+           android:layout_marginStart="15dp"
+           android:layout_marginEnd="15dp"
+           android:layout_marginBottom="15dp"
+           android:layout_alignParentEnd="true"
+           android:layout_height="wrap_content"
+           tools:ignore="ContentDescription" />
+</RelativeLayout>

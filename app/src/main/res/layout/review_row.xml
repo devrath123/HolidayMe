@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginStart="@dimen/common_padding_small"
+    android:layout_height="match_parent">
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/reviewTextView"
+            android:layout_width="wrap_content"
+            android:text="@string/Families"
+            android:drawableStart="@drawable/family"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+
+        <com.holidayme.widgets.LightFontTextView
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/padding_large_normal"
+            android:text=""
+            android:layout_alignParentEnd="true"
+            android:id="@+id/totalReviewTextView"
+            android:layout_height="wrap_content"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+

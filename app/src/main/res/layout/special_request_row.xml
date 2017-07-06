@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+     android:paddingRight="@dimen/small_padding"
+    android:paddingLeft="@dimen/small_padding"
+    android:paddingTop="@dimen/common_padding_small"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+     <com.holidayme.widgets.LightFontTextView
+         android:id="@+id/txt_selected_sp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="8dp"
+         android:background="@drawable/bg_blue_rounded_button"
+         android:text=""
+         android:textColor="@color/black"
+         />
+
+     <ImageView
+         android:layout_width="wrap_content"
+         android:padding="10dp"
+         android:layout_height="wrap_content"
+         android:src="@drawable/d_close"
+         android:id="@+id/img_close"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentEnd="true"
+         tools:ignore="ContentDescription" />
+</RelativeLayout>

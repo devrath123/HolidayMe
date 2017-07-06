@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/Select_currency_padding"
+    android:paddingRight="@dimen/Select_currency_padding"
+    android:paddingTop="@dimen/padding_normal"
+   >
+
+    <LinearLayout
+        android:id="@+id/tripAdviserRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        tools:ignore="UselessParent">
+
+        <CheckBox
+            android:id="@+id/tripAdviserCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/filter_check_box_bg"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:clickable="false"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/tripAdviserThumbnailImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/common_padding_small"
+            tools:ignore="ContentDescription" />
+
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/tripAdviserCountTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="end"
+            android:textColor="@color/light_purple"
+
+            />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp"
+   >
+
+    <com.holidayme.widgets.MediumFontTextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="20dp"
+        android:text="@string/contact_dai"
+        android:textSize="15sp"
+      />
+
+    <com.holidayme.widgets.LightFontTextView
+        android:layout_width="match_parent"
+        android:id="@+id/dialog_call1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:textColor="@color/light_purple"
+        android:paddingBottom="15dp"
+        android:text="@string/worldwide_toll_free_number"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:visibility="gone"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:background="@drawable/line_gray"
+
+        android:layout_height="1dp"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:layout_width="match_parent"
+        android:id="@+id/dialog_call2"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:textColor="@color/light_purple"
+        android:paddingBottom="15dp"
+        android:text=""
+        android:textSize="12sp"
+        android:maxLines="1"
+        />
+
+</LinearLayout>

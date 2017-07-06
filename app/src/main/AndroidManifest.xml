@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.holidayme.activities"
+          android:versionCode="21"
+          android:versionName="3.0.1">
+
+    <!-- Only mobile phone sup port -->
+
+    <!--<compatible-screens>
+
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="640"
+            android:screenSize="small" />
+
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="560"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="640"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="720"
+            android:screenSize="normal" />
+    </compatible-screens>
+-->
+
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <uses-feature android:name="android.hardware.location.gps"/>
+
+    <!-- clever tap permissiom -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <permission
+        android:name="com.your.package.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="com.your.package.permission.C2D_MESSAGE"/>
+
+    <application
+        android:name=".VolleySupport.AppController"
+        android:allowBackup="true"
+        android:configChanges="locale|orientation"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/img_me"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:logo="@drawable/img_me"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme"
+        tools:replace="android:theme,icon,label">
+        <meta-data
+            android:name="CLEVERTAP_NOTIFICATION_ICON"
+            android:value="me_icon"/>
+
+        <activity
+            android:name="com.clevertap.android.sdk.InAppNotificationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="holzoo"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.holidayme.selectlanguage_mvp.SelectLanguageActivity"
+            android:label="@string/title_activity_select_language"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity
+            android:name="com.holidayme.login_mvp.LoginWebViewActivity"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait"/>
+
+        <!-- Facebook -->
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <!-- com.facebook.app.FacebookContentProvider1495387004114736 -->
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1673460852894725"
+            android:exported="true"/>
+
+        <!-- Google API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_map_key"/>
+
+        <activity android:name="com.holidayme.staycation_details_mvp.StaycationDetailsActivity"
+            android:windowSoftInputMode="adjustPan"
+                  android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ImageZoomInActivity"
+            android:label="@string/title_activity_home"
+           />
+
+        <!-- Used for Google Play Store Campaign Measurement -->
+
+        <service
+            android:name="com.google.android.gms.analytics.CampaignTrackingService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <receiver
+            android:name="com.holidayme.receiver.InstallReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- celevr Tap -->
+        <meta-data
+            android:name="GCM_SENDER_ID"
+            android:value="id:308004312615"/>
+        <!--<meta-data
+            android:name="CLEVERTAP_ACCOUNT_ID"
+            android:value="TEST-W4R-R6K-674Z"/>
+
+        <meta-data
+            android:name="CLEVERTAP_TOKEN"
+            android:value="TEST-362-240"/>-->
+
+          <meta-data
+            android:name="CLEVERTAP_ACCOUNT_ID"
+            android:value="RZ5-6Z4-664Z"/>;
+        <meta-data
+            android:name="CLEVERTAP_TOKEN"
+            android:value="416-512"/>
+        <receiver
+            android:name="com.clevertap.android.sdk.InstallReferrerBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+
+        <!--
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.holidayme.activities" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <service
+            android:name="com.holidayme.receiver.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.holidayme.receiver.MyFirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                 
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <!--
+            <service android:name="com.holidayme.activities.util.RegistrationIntentService"
+            android:exported="false"/>
+        -->
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="174c6db9562791d58275e61547b7da08ba52fdaf"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/me_icon"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/accent"/>
+
+        <activity android:name="com.holidayme.staycation_calendar_mvp.StaycationCalendarActivity"
+            android:windowSoftInputMode="adjustPan"
+                  android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

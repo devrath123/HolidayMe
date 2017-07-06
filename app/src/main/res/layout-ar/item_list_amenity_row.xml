@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/Select_currency_padding"
+        android:paddingRight="@dimen/Select_currency_padding"
+        android:paddingTop="@dimen/padding_normal"
+       >
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/lfilterAmenityRelativeLayout"
+            android:padding="@dimen/common_padding_small"
+            tools:ignore="UselessParent">
+            <CheckBox
+                android:id="@+id/filterAmenityCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_check_box_bg"
+                android:button="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/amenityThumbNailImageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/common_padding_small"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/filterAmenityCheckBox"
+                tools:ignore="ContentDescription" />
+
+
+            <com.holidayme.widgets.LightFontTextView
+
+                android:id="@+id/filterAmenityTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_small"
+                android:textSize="@dimen/commonSmallTextSize"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/common_padding_small"
+                android:layout_toEndOf="@+id/amenityThumbNailImageView"
+                android:layout_toStartOf="@+id/amenityCountTextView"
+
+                />
+           <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/amenityCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:textSize="@dimen/commonSmallTextSize"
+                android:textColor="@color/text_sky_light"
+                android:layout_alignParentEnd="true"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+

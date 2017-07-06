@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    card_view:cardUseCompatPadding="true"
+    android:layout_marginTop="7dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    card_view:cardCornerRadius="3dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/gatewayCategoryImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:background="@drawable/gateways_index_page_shadow"
+                android:gravity="bottom|right">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:gravity="right|center"
+                    android:layout_marginBottom="13dp"
+                    android:background="@drawable/one_side_round"
+                    >
+                    <TextView
+                        android:id="@+id/priceTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="1,428.62"
+                        android:gravity="right"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>

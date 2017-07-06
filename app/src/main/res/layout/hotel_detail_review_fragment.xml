@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@color/white"
+    android:layout_gravity="center"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/x_small_padding"
+        android:paddingBottom="@dimen/x_small_padding"
+        android:paddingEnd="@dimen/x_small_padding"
+        android:orientation="vertical"
+        android:id="@+id/review_layout"
+
+        >
+
+        <View
+            android:id="@+id/topView"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@drawable/custom_tab_indicator_divider" />
+
+
+            <com.holidayme.widgets.LightFontTextView
+                android:paddingTop="@dimen/padding_normal"
+                android:id="@+id/reviewCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black" />
+
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:text="@string/Traveller_rating"
+                android:textColor="@color/black" />
+
+            <!-- Seek bat -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:gravity="center_vertical">
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/exc_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/Excellent" />
+
+                <com.holidayme.common.CustomSeekBar
+                    android:id="@+id/excellentReviewSeekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="6"
+                    android:max="100"
+                    android:progress="0"
+                    android:thumb="@null" />
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/excellentRatingTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+            <!-- very good -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:gravity="center_vertical">
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/good_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:maxLines="1"
+                    android:text="@string/Very_good" />
+
+                <com.holidayme.common.CustomSeekBar
+                    android:id="@+id/veryGoodReviewSeekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="6"
+                    android:max="100"
+                    android:progress="0"
+                    android:thumb="@null" />
+
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/veryGoodRatingTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+
+            <!-- very everage -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:gravity="center_vertical">
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/average_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/Average" />
+
+                <com.holidayme.common.CustomSeekBar
+                    android:id="@+id/averageReviewSeekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="6"
+                    android:max="100"
+                    android:progress="0"
+                    android:thumb="@null" />
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/averageRatingTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+            <!-- very everage -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:gravity="center_vertical">
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/Poor_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/Poor" />
+
+                <com.holidayme.common.CustomSeekBar
+                    android:id="@+id/poorReviewSeekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="6"
+                    android:max="100"
+                    android:progress="0"
+
+                    android:thumb="@null" />
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/poorRatingTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+            <!-- very everage -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:gravity="center_vertical">
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/Terrible_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/Terrible" />
+
+                <com.holidayme.common.CustomSeekBar
+                    android:id="@+id/terribleReviewSeekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="6"
+                    android:max="100"
+                    android:progress="0"
+                    android:thumb="@null" />
+
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/terribleRatingTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+
+            <!-- RATING SUMMERY -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_line">
+
+            </View>
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:gravity="center_vertical"
+                android:text="@string/See_reviews_for"
+                android:textColor="@color/black" />
+
+            <com.holidayme.activities.util.NonScrollListView
+                android:id="@+id/reviewListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null">
+
+            </com.holidayme.activities.util.NonScrollListView>
+
+            <!-- RATING SUMMERY -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_line">
+
+            </View>
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:gravity="center_vertical"
+                android:text="@string/Rating_summary"
+                android:textColor="@color/black" />
+
+            <com.holidayme.activities.util.NonScrollListView
+                android:id="@+id/summeryListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null">
+
+            </com.holidayme.activities.util.NonScrollListView>
+
+            <!-- RATING SUMMERY -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_line"
+                android:id="@+id/view2">
+
+            </View>
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:text="@string/Recent_Reviews"
+                android:textColor="@color/black" />
+
+            <com.holidayme.activities.util.NonScrollListView
+                android:id="@+id/topReviewListView"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="@dimen/common_padding_small"
+                android:layout_height="fill_parent">
+
+            </com.holidayme.activities.util.NonScrollListView>
+
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/error_text_review"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/no_review_found"
+            android:textColor="@color/colorRed"
+            android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+
+
+
+    <!-- for line -->
+</ScrollView>

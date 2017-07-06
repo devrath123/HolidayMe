@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bottom_navigation_shadow"
+    android:outlineProvider="bounds"
+    android:elevation="5dp"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/centerView"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/mapRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_toLeftOf="@+id/centerView">
+
+
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/mapTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/map"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="15sp"
+            android:text="Map"
+            android:textColor="@color/light_gray_text_color"/>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sortingRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_toRightOf="@+id/centerView">
+
+
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/sortingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/sort_by_popularity_pink"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Sort by Popularity"
+            android:textColor="@color/save_pink"
+            android:textSize="15sp"
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

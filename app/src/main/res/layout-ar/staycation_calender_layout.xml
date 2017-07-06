@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/calenderRelativeLayout"
+    android:layout_gravity="right"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/calendarHeader"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/calendarBackImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_back_black"
+            android:onClick="backPress"
+            android:layout_alignParentLeft="true"/>
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:layout_toRightOf="@+id/calendarBackImageView"
+            android:id="@+id/selectDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_departure_date"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            />
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:layout_toRightOf="@+id/calendarBackImageView"
+            android:id="@+id/subPackageTextView"
+            android:layout_below="@+id/selectDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Package for 2 nights"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/calendarHeader"
+        android:id="@+id/monthsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/nextMonthButton"
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:background="@color/light_grey"
+            android:src="@drawable/left_arrow"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_toLeftOf="@id/previousMonthButton"
+            android:layout_toRightOf="@+id/nextMonthButton"
+            android:id="@+id/monthRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:foregroundGravity="right"
+            android:layout_gravity="right"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/previousMonthButton"
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:background="@color/light_grey"
+            android:src="@drawable/right_arrow"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/monthsLinearLayout"
+        android:id="@+id/dayDetailsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+       />
+
+    <include
+        android:id="@+id/requestForm"
+        layout="@layout/on_request_form"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/requestSuccessForm"
+        layout="@layout/on_request_success"
+        android:visibility="gone"/>
+
+</RelativeLayout>

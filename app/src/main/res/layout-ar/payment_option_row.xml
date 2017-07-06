@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white_gray"
+
+    android:layout_height="match_parent">
+    <com.holidayme.widgets.MediumFontTextView
+        android:id="@+id/paymentMethodTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:gravity="start"
+        android:textAllCaps="true"
+        android:paddingStart="22dp"
+        android:text="@string/payment_method"/>
+
+    <LinearLayout
+
+        android:id="@+id/paymentOptionLinearLayout"
+        android:layout_below="@+id/paymentMethodTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:id="@+id/creditCardRelativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/payment_check"
+            android:layout_weight="1">
+
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/card_payment"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/lightFontTextView2" />
+
+            <ImageView
+                android:id="@+id/creditCardImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/card_payment_active"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/visaCardRelativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="invisible"
+            android:background="@drawable/payment_no_check"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/visaCardImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/visa_checkout_normal"
+                tools:ignore="ContentDescription" />
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_below="@+id/visaCardImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"
+                android:text="@string/visa_checkout"
+                android:padding="2dp"
+                android:gravity="center"
+                android:layout_marginBottom="7dp"
+                android:textSize="10sp"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/masterPassRelativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="invisible"
+            android:background="@drawable/payment_no_check"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/masterPassImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/masterpass_normal"
+                tools:ignore="ContentDescription" />
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_below="@+id/masterPassImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"
+                android:text="@string/master_pass"
+                android:padding="2dp"
+                android:gravity="center"
+                android:layout_marginBottom="7dp"
+                android:textSize="10sp"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/paymentOptionLinearLayout"/>
+
+
+
+</RelativeLayout>

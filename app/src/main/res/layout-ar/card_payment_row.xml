@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/value_deal_bg" />
+
+    <com.holidayme.widgets.MediumFontTextView
+        android:id="@+id/txt_payment_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/common_padding_small"
+        android:paddingStart="22dp"
+        android:background="@color/white"
+        android:paddingTop="@dimen/toolbar_horizontal_padding"
+        android:visibility="visible"
+        android:textAllCaps="true"
+        android:text="@string/card_details"
+        />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/small_padding"
+                android:paddingRight="@dimen/small_padding"
+                tools:ignore="ContentDescription" />
+
+            <com.holidayme.widgets.LightFontEditText
+                android:id="@+id/edt_card_no"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:hint="XXXX-XXXX-XXXX-XXXX"
+                android:textColorHint="#c3c3c3"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/small_padding"
+                android:maxLength="19"
+                android:paddingRight="22dp"
+                android:paddingTop="10dp"
+                android:layout_toStartOf="@+id/img_card_clear"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/img_card_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small_padding"
+                android:src="@drawable/d_close"
+                android:visibility="invisible"
+                android:layout_alignParentEnd="true"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/value_deal_bg" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.holidayme.widgets.LightFontEditText
+                android:id="@+id/edt_card_holder_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/card_holder_name"
+                android:inputType="textNoSuggestions"
+                android:textColorHint="#c3c3c3"
+                android:maxLines="1"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="@dimen/small_padding"
+                android:layout_toStartOf="@+id/clear_text_card_name"
+                android:paddingRight="22dp"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+
+            <ImageView
+                android:id="@+id/clear_text_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small_padding"
+                android:src="@drawable/d_close"
+                android:visibility="invisible"
+                android:layout_alignParentEnd="true"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/value_deal_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/small_padding"
+            android:paddingRight="@dimen/small_padding">
+
+            <Spinner
+                android:id="@+id/spinner_exp_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/value_deal_bg" />
+
+            <Spinner
+                android:id="@+id/spinner_exp_year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+
+                android:background="@color/value_deal_bg" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+                <com.holidayme.widgets.LightFontEditText
+                    android:id="@+id/edt_cvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:hint="@string/cvv"
+                    android:inputType="numberPassword"
+                    android:maxLines="1"
+                    android:textColorHint="#c3c3c3"
+                    android:paddingLeft="@dimen/small_padding"
+                    android:paddingRight="@dimen/small_padding"
+                    android:paddingTop="10dp"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <ImageView
+                    android:id="@+id/img_cvv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/card_cvv"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/value_deal_bg" />
+    </LinearLayout>

@@ -1,0 +1,735 @@
+<resources>
+    <string name="app_name">هوليداي-مي</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_select_language">SelectLanguageActivity</string>
+    <string name="title_activity_registration">التسجيل</string>
+
+    <!--Home-->
+    <string name="Home">الصفحة الرئيسية</string>
+    <string name="hotel">الفندق</string>
+    <string name="Term_of_Use">شروط الاستخدام</string>
+    <string name="Privacy_policy">سياسة الخصوصية</string>
+
+
+    <!-- Drawer String-->
+    <string name="EN">EN</string>
+    <string name="default_lang">AR</string>
+    <string name="AR">AR</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="nav_item_home">الصفحة الرئيسية</string>
+    <string name="nav_item_profile">ملفي الشخصي</string>
+    <string name="nav_item_terms_of_use">شروط الاستخدام</string>
+    <string name="nav_item_booking">حجوزاتي</string>
+    <string name="nav_item_privacy_policy">سياسة الخصوصية</string>
+    <string name="nav_item_contact_us">تواصل معنا</string>
+
+    <string name="log_out">تسجيل الخروج</string>
+    <!--<string name="log_out_msg">لقد تم الخروج بنجاح</string>
+    <string name="log_in_msg">You Have Successfully Logged In!</string>
+    <string name="contact_us_no">+971 44 298 989</string>-->
+
+    <!-- Drawer String-->
+
+
+    <!-- Select language Activity -->
+    <string name="save_and_continue">الحفظ والمتابعة</string>
+    <string name="Skip">تخطي</string>
+
+
+    <!-- HolidayMe Login Activity -->
+    <!--<string name="please_enter_EmailID">الرجاء إدخال عنوان البريد الإلكتروني</string>
+    <string name="please_enter_password">الرجاء إدخال كلمة السر</string>
+    <string name="Password">الرجاء إدخال كلمة السر</string>
+
+    <string name="Sign_in">الدخول</string>
+    <string name="Forgot_password">هل نسيت كلمة السر؟</string>
+    <string name="Sign_up">التسجيل</string>-->
+    <string name="Skip_Login">التخطي إلى الصفحة التالية</string>
+    <!--<string name="Login_Error_try_after_sometime">عذراً، لقد حدث خطأ أثناء تسجيل الدخول. الرجاء المحاولة مجدداً في وقت لاحق.</string>
+    <string name="Login_Cancel">إلغاء الدخول</string>
+    <string name="or">أو</string>-->
+
+    <!-- custom dialog -->
+
+    <string name="ok">حسناً</string>
+
+    <string name="please_check_your_internet_connection">الرجاء التحقق من الاتصال بشبكة الإنترنت</string>
+    <!-- Error handling -->
+    <string name="server_is_not_responding_please_try_after_some_time">يبدو أننا نواجه مشكلة في التواصل مع خادم الشبكة. يرجى المحاولة مرة أخرى في وقت لاحق.</string>
+
+    <!--select Language Activity-->
+
+    <string name="English">ENGLISH</string>
+    <string name="ARABIC">العربية</string>
+
+    <!--select Language Activity-->
+
+   <!-- <string name="Please_enter_your_email_ID">الرجاء إدخال عنوان البريد الإلكتروني</string>-->
+   <!-- <string name="The_Password_must_be_at_least_6_characters_long.">يجب أن تحوي كلمة السر 6 أحرف على الأقل</string>
+    <string name="The_password_and_confirmation_password_do_not_match.">كلمتا السر غير متطابقتين</string>
+   --> <string name="Please_enter_a_valid_email_ID">الرجاء إدخال عنوان بريد إلكتروني صحيح</string>
+   <!-- <string name="Please_enter_password"> الرجاء إدخال كلمة السر</string>-->
+
+
+    <!--Hotel Search Activity-->
+
+    <string name="letsgo">بحث</string>
+    <string name="recent_searches">عمليات البحث الأخيرة</string>
+    <string name="nearme">القريبة مني</string>
+    <string name="Check_in">تسجيل الدخول</string>
+    <string name="Check_out">تسجيل الخروج</string>
+    <string name="addroom">إضافة غرفة</string>
+    <!--<string name="Age">العمر</string>-->
+
+    <string name="Invalid_destination_Please_select_valid_destination">عذراً، الوجهة غير موجودة. الرجاء اختيار وجهة صالحة</string>
+    <string name="date_difference"> الفرق بين تاريخي المغادرة والعودة لا يجب أن يتجاوز 25 يوماً
+    </string>
+    <string name="sorry_unable_to_process_your_request_please_try_after_some_time">عذراً، ليس بالإمكان معالجة طلبكم في الوقت الحالي. الرجاء المحاولة لاحقاً.
+</string>
+    <string name="Search_Hotel"> البحث عن الفنادق</string>
+    <string name="Search_listing"> البحث عن الفنادق</string>
+
+    <string name="location_no_rooms_available">  "عذراً، لا توجد أي غرف شاغرة في هذا الفندق. الرجاء اختيار فندق آخر."</string>
+
+
+    <!-- hotel Listing !-->
+
+    <string name="no_hotel_available"> عذراً، لا توجد أي غرف شاغرة في هذا الفندق. الرجاء اختيار فندقٍ آخر والمحاولة مجدداً.</string>
+<!--
+    <string name="no_hotel_available_filter_again"> عذراً، لا توجد أي فنادق مطابقة لعوامل التصفية التي اخترتها. الرجاء تغيير عوامل التصفية</string>
+    <string name="Loading">جار التحميل</string>-->
+    <string name="Kids"> أطفال</string>
+    <string name="Room">الغرف</string>
+    <string name="room">الغرف</string>
+    <!--<string name="Night">ليلة</string>-->
+
+    <string name="payat_hotel">الدفع في الفندق</string>
+
+
+    <!-- hotel Details!-->
+    <string name="no_anemites_found"> لم يتم العثور على أي مرافق</string>
+    <string name="no_review_found">عذراً، لم يتم العثور على أي تقييمات</string>
+
+    <!--<string name="rooms_tab">الغرف</string>
+    <string name="details_tab">تفاصيل</string>
+    <string name="review_tab">التعليقات</string>
+    <string name="amenities_tab">المرافق</string>-->
+
+    <!-- Forgot password!-->
+    <!--<string name="forgot_password_message">لقد تم إرسال كلمة السر إلى عنوان بريدك الإلكتروني</string>
+    <string name="Please_enter_register_email_address">الرجاء إدخال عنوان البريد الإلكتروني المسجل على الحساب</string>
+    <string name="Submit">إرسال</string>-->
+    <string name="Cancel">إلغاء</string>
+   <!-- <string name="Forgot_Password">هل نسيت كلمة السر؟</string>-->
+
+    <!--hotel room-->
+    <!--<string name="Conformation_page_Loading">جار تحميل صفحة التأكيد</string>
+    <string name="payment_page_Loading">جار تحميل صفحة الدفع</string>-->
+
+
+    <!-- GPS -->
+    <string name="you_need_to_switch_on_your_location_settings_for_tab_search">يحتاج موقع هوليداي-مي إلى الوصول إلى موقعكم. الرجاء تشغيل إمكانية الكشف عن الموقع</string>
+    <!--<string name="Please_wait_while_we_fetch_your_current_location">الرجاء الانتظار بينما نقوم بتحديد موقعكم</string>-->
+    <string name="unable_to_fetch_your_current_location">عذراً، لم نتمكن من تحديد موقعكم</string>
+
+    <string name="city_not_found">عذراً، لم نتمكن من العثور على المدينة</string>
+
+    <!--<string name="area_prompt">الرجاء اختيار المنطقة</string>-->
+
+
+    <!--radio button in fragmrnt Supriya-->
+
+    <string name="price">السعر</string>
+    <string name="location">الموقع</string>
+    <!--<string name="Rate">عدد النجوم</string>-->
+    <string name="trip_advisor">Trip Advisor</string>
+    <!--<string name="theme">نوع الفندق</string>-->
+    <string name="aminities">المرافق</string>
+    <string name="details">التفاصيل</string>
+
+
+    <!--hotel-->
+    <string name="Hotel_name">Radission</string>
+    <!--<string name="per_night">في الليلة الواحدة</string>-->
+
+    <!--<string name="book">احجز</string>-->
+    <string name="Reviews"> التقييمات</string>
+    <!--Room details-->
+
+    <!--<string name="price_for">سعر</string>
+    <string name="room_for">Room For</string>-->
+    <string name="nights">ليال</string>
+    <string name="max_adults">الحد الأقصى للبالغين:</string>
+    <string name="includes">يشمل:</string>
+    <string name="Non_Refundable">غير قابل للاسترداد</string>
+    <string name="Free_Cancellation">إلغاء مجاني</string>
+    <!--<string name="Not_applicable">خاضعة للضرائب</string>-->
+    <string name="Taxes_included">شامل الضرائب</string>
+    <string name="Taxes_not_included">يشمل جميع الضرائب المفروضة</string>
+    <string name="Refundable">قابل للاسترداد</string>
+    <string name="NA">الغرفة فقط (دون الوجبات)</string>
+    <!--<string name="Book_now">إحجز الآن</string>-->
+
+    <!--<string name="Book_now"></string>-->
+
+
+    <string name="Book_now">احجز الآن</string>
+
+
+
+    <!-- select language -->
+    <string name="select_currency">الرجاء اختيار العملة</string>
+
+    <!-- map -->
+
+    <!--    <string name="google_map_key">AIzaSyCLV2qULxjtJ_OcI3aPX1zE4c6ba0mPY_U</string>-->
+
+
+    <!--auto complete-->
+    <string name="Hotel">الفنادق</string>
+    <!-- <string name="hotel_name">Hotel Name</string>-->
+    <string name="city">المدينة</string>
+
+    <!--filter adapter-->
+    <!-- <string name="hotel_chain">سلسلة الفنادق</string>
+      <string name="number">100</string>-->
+
+    <!--Room Rate brake Up Adapter-->
+
+    <string name="Rooms">الغرف</string>
+    <string name="Totals">المجموع</string>
+    <string name="Adults">بالغون</string>
+    <string name="Adult">بالغون</string>
+    <string name="Kid"> أطفال</string>
+    <!--Filter-->
+    <string name="Price">السعر</string>
+    <!--<string name="Location">الموقع</string>-->
+    <string name="Rating">عدد النجوم</string>
+    <!--<string name="Trip_Advisor">Trip Advisor</string>-->
+    <string name="Theme">نوع الفندق</string>
+    <string name="Amenities">المرافق</string>
+    <string name="Hotel_chain">سلسلة الفنادق</string>
+    <string name="Select_your_preferred_Amenities">الرجاء اختيار المرافق التي تريدها</string>
+    <string name="Select_your_preferred_Hotels">الرجاء اختيار سلسلة الفنادق التي تفضلها</string>
+    <string name="Select_your_preferred_location">الرجاء اختيار المواقع التي تفضلها</string>
+    <string name="Select_your_preferred_Theme">الرجاء اختيار نوع الفندق</string>
+    <string name="Select_your_preferred_Rating">الرجاء اختيار عدد النجوم</string>
+    <string name="Select_your_prefered_trip_advisor_rating">الرجاء اختيار تقييم TripAdvisor</string>
+    <string name="Select_your_preferred_Price"> اختيار نطاق السعر</string>
+
+
+    <!--forgot password-->
+    <!--<string name="Your_Email">الرجاء إدخال عنوان البريد الإلكتروني
+</string>-->
+
+    <!--Hotel Detail Info-->
+    <string name="HOTEL_POLICY_OF">سياسة الفندق</string>
+    <string name="DETAILS">تفاصيل الفندق</string>
+
+    <!--Hote Review-->
+    <string name="Traveller_rating">تقييمات المسافرين</string>
+    <string name="Excellent">ممتاز</string>
+    <string name="Very_good">جيد جداً</string>
+    <string name="Average">المعدل</string>
+    <string name="Poor">رديء</string>
+    <string name="Terrible">سيء جداً</string>
+    <string name="See_reviews_for">اطلع على التقييمات</string>
+    <string name="Families">عائلات</string>
+    <!--<string name="Couples">أزواج</string>
+    <string name="Solo">منفرد</string>
+    <string name="Business">أعمال</string>-->
+    <string name="Rating_summary">ملخص عن التقييمات</string>
+    <!--<string name="Sleep_Quality">النوم المريح</string>
+    <string name="Service">الخدمة</string>
+    <string name="Value">القيمة</string>-->
+    <string name="Recent_Reviews">آخر التقييمات</string>
+    <string name="reviews_from_our_community">تقييمات زبائن هوليداي-مي</string>
+
+
+    <!--Hotel Book Comfermation-->
+    <string name="Room_Booked_for">الغرفة محجوزة باسم</string>
+    <string name="Congratulation">تهانينا! تم تأكيد الفندق بنجاح</string>
+    <string name="Thank_you">شكراً لاختياركم هوليداي-مي</string>
+    <string name="Booking_id">رقم الحجز</string>
+    <string name="Confirmation_No">رقم التأكيد</string>
+    <string name="Check_In">تسجيل الدخول</string>
+    <string name="Check_Out">تسجيل الخروج</string>
+    <string name="Rate_Break_Up">معدل تفريق</string>
+    <string name="Gross_total">المجموع الإجمالي</string>
+    <string name="Dicount">خصم</string>
+    <string name="Grand_Total">السعر الإجمالي</string>
+
+    <!-- supriya -->
+
+    <string name="Cancellation_Policy"><u>سياسة الإلغاء</u></string>
+    <string name="Cancellation_Policy_tab">سياسة الإلغاء </string>
+    <string name="room_info">تفاصيل الغرف</string>
+    <!--<string name="Popularity">الشعبية </string>-->
+    <string name="Popularity"> الأكثر مبيعاً</string>
+
+
+    <!--sort-->
+    <string name="By_Popularity">الأكثر مبيعاً بحسب</string>
+    <string name="By_Price">بحسب السعر</string>
+    <string name="By_Star_Rating">بحسب عدد النجوم</string>
+    <string name="By_Trip_Advisor_Rating">بحسب تقييم TripAdvisor</string>
+    <string name="Apply">تطبيق</string>
+    <string name="Clear">مسح</string>
+    <string name="Filter">تصفية النتائج </string>
+    <!--<string name="Filter">عوامل التصفية</string>-->
+    <!--<string name="Map">عرض الخريطة</string>-->
+    <string name="Sort">التصنيف</string>
+    <!--<string name="Order_by">Order by</string>-->
+
+
+    <!--<string name="Registration_successful"> تم تسجيل الحساب بنجاح</string>-->
+
+    <!-- extra-->
+    <!--<string name="we_have_been_unable_to_register_as_the_given_email_address_is_already_present_in_the_database"> عذراً، لم نتمكن من تسجيل الحساب إذ أن عنوان البريد الإلكتروني الذي تم إدخاله قد سبق وتم حفظه في قاعدة بياناتنا.
+</string>-->
+    <!--<string name="Coming_soon"> قريباً</string>
+
+    <string name="Search_hotels">البحث عن الفنادق</string>
+    <string name="no_hotels_found">عذراً، لم يتم العثور على أي فنادق</string>-->
+    <string name="Hotel_booking">حجز الفنادق</string>
+
+    //now add
+
+
+    <string name="data_not_found">لم يتم العثور على البيانات</string>
+    <string name="Done">تم</string>
+
+
+    <string name="First_Name">الاسم</string>
+    <string name="Last_Name">العائلة</string>
+    <string name="Email_Address">عنوان البريد الإلكتروني</string>
+    <string name="Display_Name">اسم العرض</string>
+    <string name="Mob_No">رقم الهاتف</string>
+    <string name="City">المدينة</string>
+    <string name="Area">منطقة</string>
+
+    <!--<string name="State">الولاية</string>
+    <string name="Country">الدولة</string>
+    <string name="Postal_code">الرمز البريدي</string>
+    <string name="Address">العنوان</string>-->
+    <string name="My_Booking">الحجوزات بلدي</string>
+    <!--<string name="Edit_Profile">تعديل الملف الشخصي</string>-->
+
+
+    <!--My booking -->
+    <string name="Date">تاريخ</string>
+    <string name="Check_In_Date">تاريخ تسجيل الدخول</string>
+    <string name="Check_out_date">تاريخ تسجيل الخروج</string>
+    <string name="Billing_Amount">مبلغ الفواتير</string>
+
+
+    <string name="no_booking"> عذراً، لم يتم العثور على أي حجوزات</string>
+    <string name="My_profile">ملفي الشخصي</string>
+    <!--<string name="Please_enter_first_name">الرجاء إدخال الاسم الأول</string>
+    <string name="Please_enter_display_name">الرجاء إدخال اسم العرض</string>
+    <string name="Profile_sucessfully_update">تم تحديث ملفك الشخصي بنجاح</string>
+    <string name="call">مكالمة</string>
+    <string name="toll_free_no">الرجاء الاتصال بنا على هذا الرقم 97143650123+ للحجز في هذا الفندق</string>
+    <string name="contact_no">+ 971 4 3650123</string>
+    <string name="contact_us_no_sa">+(966)920002963</string>-->
+    <string name="Unavilable">غير متوفره</string>
+    <string name="yes">نعم فعلا</string>
+    <string name="No">لا</string>
+    <string name="Please_Login_First_profile">الرجاء تسجيل الدخول لعرض الملف الشخصي</string>
+    <string name="Please_Login_First_booking">الرجاء تسجيل الدخول لعرض الحجوزات الخاصة بك</string>
+    <!--<string name="Value_deal">عروض التوفير </string>-->
+
+    <!--night-->
+    <string name="one_night"> ليلة </string>
+    <string name="two_night">ليلتين</string>
+    <string name="three_ten_night">ليالٍ</string>
+    <string name="eleven_and_above_night">يلة"</string>
+
+    <!--room-->
+    <string name="one_room">غرفة</string>
+    <string name="two_room">غرفتين </string>
+    <string name="three_ten_room">غرف</string>
+
+    // should in Arabic
+
+    <string name="Payment_failure_1">للأسف لم يتم قبول المبلغ المدفوع عبر الإنترنت وعليه لم يتم الحجز في</string>
+    <string name="Payment_failure_2">, بنجاح. الرجاء مراجعة تفاصيل الدفعة أو المحاولة مجدداً باستخدام طريقة دفع أخرى.</string>
+    <string name="booking_fail_1">يؤسفنا إعلامكم بأن مبلغ الحجز في</string>
+    <string name="booking_fail_2">قد تم اقتطاعه من حسابكم على الرغم من أن الحجز لم يتم بنجاح. نعتذر عن أي إزعاج سببناه لكم، وسيتواصل معكم فريق هوليداي-مي خلال بضع ساعات لتقديم المساعدة</string>
+    <string name="pay_at_hotel_confirm_1">تم قبول حجزكم في</string>
+    <string name="pay_at_hotel_confirm_2"> مبدئياً، وسيتعين عليكم دفع المبلغ كاملاً في الفندق.</string>
+
+
+    <!-- Santosh-->
+    <!-- Registration-->
+    <!--<string name="Registration">التسجيل</string>-->
+
+
+    <!--26_nov_2015-->
+   <!-- <string name="msgConfirmedHotel">تهانينا! تم تأكيد الفندق بنجاح. الرجاء النظر أدناه للاطلاع على ملخص الرحلة وجميع التفاصيل المتعلقة بها.</string>
+    <string name="msgTransactionFailed">تعرّضت محاولتكم للدفع عبر الإنترنت للفشل نظراً لعدم تمكننا من معالجة الدفعة التي قمتم بها. الرجاء مراجعة بيانات الدفع أو المحاولة مرة أخرى باستخدام وسيلة دفع أخرى.</string>
+    <string name="msgAppology">نعتذر عن أي إزعاج سببناه لكم، وسيتواصل معكم فريق هوليداي-مي قريباً لتقديم المساعدة.</string>
+    <string name="msgUnfortunatelyYourAttemptToBookHotelNameWasUnsuccessful">يؤسفنا إعلامكم بأن حجزكم في {0} لم يتم بنجاح.</string>
+    <string name="msgKindlyReviewYourPaymentDetailsorTryAgainUsingADifferentPaymentMethod">الرجاء مراجعة تفاصيل الدفعة أو المحاولة مجدداً باستخدام طريقة دفع أخرى.</string>
+    <string name="msgYouMayAlsoContactOurCustomerSupportAtForFurtherAssistance">بإمكانكم أيضاً الاتصال بنا للحصول على المزيد من المساعدة: +971 4 3650123</string>
+    <string name="msgThankYouForChoosingHolidayMe">شكراً لاختياركم هوليداي-مي.</string>
+    <string name="msgBookingFailedWithSupplier">نعتذر لإبلاغك أنه على الرغم من السداد مقابل الحجز {0} إلا أن الحجز لم يتم.</string>
+
+    <string name="msgYourBookingIsPendingWithUs">ما زال حجزكم معلقاً لدينا، وستيصل بكم أحد موظفي خدمة الزبائن خلال 24 ساعة.</string>
+    <string name="msgBookingFailed">نعتذر لإبلاغكم بأن الحجز لم يتم!</string>
+    <string name="msgThankYou">نشكركم لأنكم منحتم شركة هوليداي-مي الفرصة لتكون جزءاً من رحلتكم، فنحن يسعدنا أن نقدم نظام حجز سهل ومريح يسهل عليكم أموركم، كما نتمنى أن تختارونا لمساعدتكم في التخطيط لرحلاتكم القادمة.</string>
+    <string name="msgBookingConfirmation">هذا تأكيد الحجز الخاص بكم، علماً بأنه يتعين عليكم إبراز نسخة مطبوعة من القسيمة لمزود الخدمات عند نقطة الركوب.</string>
+-->
+    <string name="cod_msg">ما زال حجزكم معلقاً لدينا، وستيصل بكم أحد موظفي خدمة الزبائن خلال 24 ساعة.</string>
+
+    <string name="No_room_available">"عذراً، لا توجد أي غرف شاغرة في هذا الفندق. الرجاء اختيار فندق آخر"</string>
+    <string name="hotel_address">العنوان </string>
+    <string name="night">Night</string>
+    <!--<string name="All_Areas">جميع المناطق</string>
+    <string name="limit_title">9 أشخاص كحد أقصى</string>-->
+    <string name="limit_restriction">عفوا، الحد الأقصى 24 أشخاص</string>
+
+
+    <string name="reset_filter">إعادة ضبط الكل</string>
+    <!--<string name="reset_filter">إعادة ضبط عوامل التصفية</string>-->
+
+    <string name="no_filter_hotels_found">لم يتم العثور على أي فنادق تتوافق مع عوامل التصفية المختارة</string>
+    <string name="no_filters_hotels_title">تصفية الفنادق</string>
+
+    <string name="Reset_filter">إعادة ضبط عوامل التصفية</string>
+    <string name="Network_not_avilable">شبكة البيانات غير متوافرة</string>
+    <!--<string name="Your_profile_successfuly_update">تم تحميل الصفحة الشخصية بنجاح</string>-->
+    <string name="Sorry_unable_to_create_maps">Sorry! unable to create maps</string>
+
+    <string name="welcome_guest">مرحباً!</string>
+    <string name="tap_here_to_login">انقر هنا لتسجيل الدخول</string>
+    <string name="Asia_Pacific">آسيا والمحيط الهادئ</string>
+    <string name="EUROPE">أوروبا</string>
+    <string name="AMERICAS">الأمريكتين</string>
+    <string name="AFRICA_MIDDLE_EAST">أفريقيا والشرق الأوسط</string>
+
+    <!--<string name="Container_id">GTM-MJMZF8</string>-->
+
+    <string name="Above_17_years">17 سنة على الأقل</string>
+    <string name="Below_17_years">0 إلى 17 سنة</string>
+    <string name="Age_of_child_1">الطفل 1</string>
+    <string name="Age_of_child_2">الطفل 2</string>
+    <string name="SEARCH_BY_AREA_LANDMARK_OR_HOTEL">بحث بحسب المدينة، البلد أو إسم الفندق</string>
+    <string name="CheckInInstructions">من المهم أن تعلم</string>
+    <!--<string name="Continue">استمر بالبحث</string>
+    <string name="payat_hote_msg">إحجز الآن وادفع أثناء إقامتك</string>-->
+    <string name="laguage">اللغة</string>
+    <string name="currency">العملة</string>
+    <string name="price_for_room_includes">. يشمل سعر الغرفة: </string>
+    <string name="coupon_code"> تم نسخ الرمز</string>
+    <string name="lblThisBookinghasBeenCancelled">تم إلغاء هذا الحجز.</string>
+    <!--contact us dai and fragment-->
+
+    <!--<string name="contact_us_dai">call +971 44 298 989</string>
+    <string name="contact_us_no_sa_dai"> call +(966)920002963</string>-->
+    <string name="contact_us_title">دائماً على استعداد لاستقبال رسائلكم!</string>
+
+    <!--<string name="cantact_us_call2">الرقم المجاني (السعودية) : 920002963 (966)+</string>-->
+    <string name="contact_dai">تحتاج للمساعدة؟ اتصل بنا الآن</string>
+    <!--Need arabic translation-->
+    <string name="hotel_bookings">حجز الفنادق</string>
+
+    <!--rateus dailog-->
+    <string name="rate_us_title">ما رأيك بتطبيق هوليداي-مي؟</string>
+    <string name="rate_us_msg">هل يمكنك تقييم التطبيق على جوجل بلاي؟ </string>
+    <string name="rate_now">التقييم الآن</string>
+    <string name="remind_later">لاحقاً </string>
+    <string name="no_thanks">لا شكراً</string>
+
+    <!--&lt;!&ndash;rateus dailog&ndash;&gt;-->
+    <!--<string name="rate_us_title">ما رأيك بهوليداي-مي؟</string>-->
+    <!--<string name="rate_us_msg">خذ دقيقة لإبداء رأيك إذا أعجبك تطبيق هوليداي-مي </string>-->
+    <!--<string name="rate_now">أبدي برأيي الآن</string>-->
+    <!--<string name="remind_later">لاحقاً</string>-->
+    <!--<string name="no_thanks">لا شكراً</string>-->
+
+
+
+    <!--force update msg-->
+    <string name="upgrade_app_two_button_msg">توجد نسخة جديدة من تطبيق هوليداي-مي على متجر   غوغل بلاي؟
+هل ترغب في تحديث التطبيق الآن؟
+</string>
+
+  <!--  <string name="upgrade_app_one_button_msg">تتوفر الآن نسخة جديدة من تطبيق هوليداي-مي.يرجى التحديث للحصول على أفضل الأسعار والمزيد من العروض والخيارات.</string>
+    <string name="update_one_btn">قم بالتحديث الآن!</string>  -->
+    <string name="update_two_btn">نعم</string>
+    <string name="LATER">لاحقاً</string>
+    <string name="year"><br>العمر</br> 1</string>
+    <string name="apply_coupon">تطبيق</string>
+    <string name="remove_coupon">حذف</string>
+
+    <!--booking page validation-->
+    <string name="phone_validation">الرجاء إدخال رقم هاتف صالح.</string>
+    <string name="cvv_validation">الرجاء إدخال رقم التحقق من البطاقة. على سبيل المثال:123</string>
+    <string name="creditcard_validation">الرجاء اختيار رقم بطاقة صالح؛ على سبيل المثال: 1111222233334444</string>
+
+    <string name="coupon_code_type">أدخل رمز القسيمة هنا</string>
+    <string name="hotel_voucher_text">سيتم إرسال قسيمة حجز الفندق إلى هذا البريد الإلكتروني. كما يرجى استخدام الاسم كما هو مدون ببطاقة الهوية/ جواز السفر.</string>
+    <string name="payment_details_text">تفاصيل الدفع</string>
+   <!-- <string name="terms_of_use">شروط الاستخدام</string>
+    <string name="terms_acceptance">إن متابعة هذه العملية تعني موافقتك على </string>-->
+    <string name="cvv">CVC/CVV</string>
+    <string name="fare_breakup">عرض مفصّل للأسعار</string>
+    <string name="inclusion">المشتملات</string>
+    <string name="traveller">المسافر</string>
+    <string name="Traveller">بيانات المسافر</string>
+    <string name="Staycation_Traveller">بيانات المسافر (باللغة الإنكليزية)</string>
+    <string name="Room_Type">اسم الغرفة</string>
+    <string name="pay_securely">إدفع بأمان</string>
+    <string name="travelling">أنا المسافر الأساسي</string>
+    <!--<string name="credit_card">بطاقة الائتمان</string>
+    <string name="cash_on_delivery">الدفع نقداً عند التسليم</string>-->
+    <string name="no_card_charge">لن نقتطع أي مبالغ من بطاقتك الائتمانية، ولن يتم استخدامها إلا لضمان الحجز.</string>
+    <string name="total_booking_amount">مبلغ الحجز الإجمالي</string>
+    <string name="card_holder_name">اسم حامل البطاقة</string>
+    <!--<string name="street_name">اسم أو رقم الشارع</string>
+    <string name="building_name">اسم المبنى</string>
+    <string name="floor_number">رقم الطابق</string>
+    <string name="apartment_number">رقم الشقة</string>
+    <string name="landmark">أقرب معلم بارز</string>-->
+    <string name="first_name">الاسم الأول</string>
+    <string name="special_request">طلبات خاصة</string>
+    <string name="booking_page_amount_total_text1">ستدفع</string>
+    <string name="booking_page_amount_total_text2">بالعملة المستخدمة في الفندق (قد يختلف سعر الصرف)</string>
+
+    <string name="pay_full_amt">دفع المبلغ كاملاً</string>
+   <!-- <string name="Cod_not_avilable">إن اختياركم الحالي هو الشراء الفوري وهذا يتطلب الدفع عبر شبكة الإنترنت. متابعة بطاقة ائتمان</string>-->
+
+    <string name="applied">مطبّق</string>
+    <string name="txes_fees">الرسوم والضرائب</string>
+
+    <string name="name_error_msg1">الرجاء إدخال </string>
+    <string name="name_error_msg2">تنبيه: يجب أن تكتب الاسماء بالانجليزية وعدم استخدام اي رموز خاصة</string>
+    <string name="name_error_msg3">الرجاء إدخال أكثر من حرفين</string>
+
+    <string name="pay_at_hotel_txt">لن تدفع أي مبلغ الآن. سدد حسابك في الفندق مباشرةً.</string>
+    <!--<string name="proceed_to_book">المتابعة إلى صفحة الدفع</string>-->
+    <string name="proceed_to_book"> الدّفع وتأكيد الحجز</string>
+
+
+    <string name="payment_info" formatted="false">ضمان حماية المشتري 100% - تقدم هوليداي-مي ضماناً كاملاً بنسبة 100% على جميع عمليات الشراء، مؤكدةً بذلك على جودة المنتجات وأمن الدفعات وسهولة عمليات رد المبالغ. *\تطبق الأحكام والشروط </string>
+    <string name="payment_info_title">ضمان حماية المشتري 100%</string>
+    <string name="try_again">المحاولة مرة أخرى</string>
+    <string name="booking_failed">فشل الحجز</string>
+    <string name="expire_date_validation">الرجاء اختيار تاريخ انتهاء صحيح</string>
+    <string name="Avrage_night_brake">متوسط سعر الليلة</string>
+    <string name="Tax">الضرائب</string>
+    <string name="coupon_code_validation">الرجاء إدخال رمز القسيمة</string>
+    <!--<string name="please_wait">Please wait....</string>-->
+    <string name="billing_currency_text1_new" formatted="false">المبلغ المستحق في %s هو %s. قد يتم فرض رسوم بنكية وفقاً لسياسة البنك الخاص بك.</string>
+    <string name="card_charge">سيتم خصم مبلغ الحجز بالكامل وفي الحال من بطاقة الائتمان من صفحة الحجز.</string>
+    <string name="creditcard_type_validation">الرجاء استخدام بطاقة ماستركارد أو فيزا عند الحجز.</string>
+    <string name="save">حفظ </string>
+    <string name="no_filter_available">
+عذراً، لا توجد أي عوامل تصفية
+</string>
+
+
+    <!--<string name="title_activity_maps">Map</string>-->
+    <string name="travel_detail_msg">لم يتم إدخال تفاصيل المسافرين.</string>
+
+
+
+    <!--<string name="term_and_condition">الشروط</string>
+    <string name="cod_text">يمكن الدفع نقداً عند تسليم قسيمة الحجز فقط في: أبوظبي - دبي - الشارقة - الرياض</string>-->
+    <string name="to">إلى</string>
+    <string name="other">آخر</string>
+    <!--<string name="and"> و </string>-->
+    <string name="aminity_note">ملاحظة: قد يفرض الفندق رسوماً على بعض المرافق المتوفرة.</string>
+    <string name="common_error_msg">عذراً، لقد حدث خطأ ما. الرجاء المحاولة مرة أخرى.</string>
+
+    <string name="request_cancellation">طلب الإلغاء </string>
+    <string name="view">عرض</string>
+    <string name="request_cancellation_massage">هل أنت واثق بأنك تريد إلغاء الحجز؟</string>
+    <string name="request_cancellation_info"> شكراً لطلبكم رقم المرجع لطلبك للإلغاء%s. سيتصل فريق الدعم لدينا بك قريبا </string>
+    <string name="send_email_to_user_massage">تم إرسال البريد الإلكتروني</string>
+    <string name="email">إرسال </string>
+    <string name="cancelled">حجز ملغى</string>
+    <string name="Confirmed">حجز مؤكد</string>
+    <string name="loging_header_text">  تسجيل الدخول/إنشاء الحساب </string>
+
+
+    <string name="uae_toll_free_number">800454545</string>
+    <string name="saudi_toll_free_number">920002963</string>
+    <string name="worldwide_toll_free_number">+97144358431</string>
+
+
+    // contact us dial text
+
+    <string name="uae_toll_free_text">الرقم المجاني بالإمارات: 800454545 </string>
+    <string name="saudi_toll_free_text">الرقم المجاني بالسعودية: 920002963  </string>
+    <string name="worldwide_toll_free_text">الرقم الدولي: </string>
+    <string name="what_is_visa_checkout">ماذا يقصد بـ "فيزا تشيك آوت؟</string>
+    <string name="visa_checkout_short_text">تتيح خدمة "فيزا تشيك آوت" (Visa Checkout) الدفع على شبكة الإنترنت بكل سهولة.</string>
+    <string name="visa_checkout_long_text">تتيح خدمة "فيزا تشيك آوت" (Visa Checkout) الدفع على شبكة الإنترنت بكل سهولة.أدخل اسم الدخول وكلمة المرور الخاصة بك وقم بالدفع عبر الإنترنت من خلال حساب واحد يمكن استخدامه مع الهواتف الذكية وأجهزة الحاسوب والأجهزة اللوحية.لا حاجة لإعادة إدخال رقم البطاقة أو العنوان البريدي في كل مرة، فبإمكانك حفظ تفاصيل جميع بطاقاتك الائتمانية والاعتمادية في حساب واحد.</string>
+
+    <string name="what_is_masterpass">ماذا يقصد بـ "ماسترباس"؟</string>
+    <string name="master_pass_short_text">إن "ماسترباس" (Masterpass) عبارة عن محفظة رقمية بسيطة وموثوقة ومريحة، تتيح التسوق بكل سهولة وسرعة من آلاف المتاجر على الإنترنت.</string>
+    <string name="master_pass_long_text">إن "ماسترباس" (Masterpass) عبارة عن محفظة رقمية بسيطة وموثوقة ومريحة، تتيح التسوق بكل سهولة وسرعة من آلاف المتاجر على الإنترنت.إن خدمة "ماسترباس" مجانية، ويمكن استخدامها متى رأيت رمزها على أي موقع.مع محفظة "ماسترباس"، أصبح التسوق على الإنترنت سهلاً وآمناً مع إمكانية حفظ بيانات بطاقاتك الائتمانية والاعتمادية وعنوان الشحن الذي تريده في مكان واحد.</string>
+
+
+    <string name="proceed_with_visa_checkout">المتابعة باستخدام فيزا تشيك آوت</string>
+    <string name="proceed_with_master_pass">المتابعة باستخدام ماسترباس</string>
+
+    <string name="card_terms">إن متابعة هذه العملية تعني موافقتك على شروط وأحكام و سياسة الخصوصية</string>
+    <string name="visa_terms">من خلال النقر على زر "المتابعة باستخدام فيزا تشيك آوت"، توافق على ما تفرضه هوليداي-مي من شروط وأحكام وسياسة حجز وإلغاء، بالإضافة إلى الشروط والأحكام الخاصة بفيزا تشيك آوت.</string>
+    <string name="masterpass_terms">من خلال النقر على زر "المتابعة باستخدام ماسترباس"، توافق على ما تفرضه هوليداي-مي من شروط وأحكام وسياسة حجز وإلغاء، بالإضافة إلى الشروط والأحكام الخاصة بماسترباس.</string>
+
+    <!--<string name="blank_int">%d</string>
+    <string name="blank_string">%s</string>
+-->
+
+    <string name="nearest_mosque">أقرب مسجد</string>
+    <string name="nearest_shopping_mall">أقرب مركز تجاري</string>
+    <string name="nearest_halal_restaurant">أقرب مطعم حلال</string>
+
+
+    // Staycation Index Page
+
+    <string name="getaways_title">الرحلات السياحية القصيرة</string>
+    <string name="near_you">القريبة </string>
+
+
+
+    // Getaway Booking Page
+
+
+    <string name="booking_policy">سياسة الحجز </string>
+    <string name="amount_payable">المبلغ المستحق</string>
+    <string name="payment_method">طريقة الدفع </string>
+    <string name="card_details">التفاصيل</string>
+    <string name="card_payment">بطاقة الائتمان / الاعتماد </string>
+    <string name="visa_checkout">فيزا تشيك آوت</string>
+    <string name="master_pass">ماسترباس</string>
+
+
+
+    <string name="rate_breakup">تفاصيل السعر </string>
+    <string name="per_package_cost">سعر البرنامج </string>
+    <string name="number_of_packages">عدد البرامج السياحية </string>
+    <string name="total_amount">المبلغ الإجمالي</string>
+
+
+    // GetawayBookingConfirmation page
+
+    <string name="success">تم الحجز بنجاح! </string>
+    <string name="failed">فشل الحجز </string>
+    <string name="payment_failed"> فشلت عملية الدفع!</string>
+    <string name="unfortunately_payment_failed">يؤسفنا إعلامكم بأن عملية الحجز قد فشلت</string>
+    <string name="reff_number">رقم الحجز</string>
+    <string name="important_info">معلومات هامة </string>
+    <string name="cancellation_policy">سياسة الإلغاء </string>
+    <string name="booking_email">المراسلة بالبريد الإلكتروني</string>
+    <string name="call">اتصل بنا</string>
+
+    <string name="try_payment_again">الرجاء محاول الدفع مرة أخرى</string>
+    <string name="congrats_msg">تهانينا، لقد تم الحجز بنجاح! </string>
+    <string name="congrats_msg_hotel" formatted="false">تهانينا %s،\n لقد تم الحجز بنجاح!</string>
+    <string name="unfortunately_card_charged">يؤسفنا إعلامكم بأن المبلغ خصم من حسابكم على الرغم من أن الحجز لم يتم بنجاح.</string>
+    <string name="transaction_could_not_be_processed">لم تتم عملية الدفع بنجاح</string>
+    <string name="sorry">عذراً</string>
+    <string name="bank_has_not_authorized">لم يأذن المصرف بهذا الطلب للسبب التالي: </string>
+    <string name="booking_in_process">يجري الحجز الآن </string>
+
+    <string name="payment_for_getaway">لقد تم دفع المبلغ لقاء</string>
+    <string name="payment_received_booking_in_process">بنجاح، ويجري الآن التأكيد على الحجز. </string>
+
+
+
+
+
+
+=======
+    <string name="sort_by">التصنيف بحسب</string>
+    <string name="Select_categories">اختر الفئة</string>
+    <string name="Select_Distance">اختر المسافة</string>
+    <string name="start_distance">0-150 كم</string>
+    <string name="second_distance">151-300 كم</string>
+    <string name="middle_distance">301-450 كم</string>
+    <string name="end_distance">451  كم وما فوق</string>
+    <string name="kms">كم </string>
+    <string name="From">من </string>
+    <string name="Selling_Fast">الأكثر مبيعاً</string>
+
+
+   <!--  Staycation Details  -->
+    <string name="select_tour_options">اختر البرامج</string>
+    <string name="what_you_get"> المشتملات</string>
+    <string name="overview">لمحة عامة</string>
+    <string name="read_more">المزيد من التفاصيل</string>
+    <string name="read_less">اقرأ المزيد</string>
+    <string name="hotel_policies">سياسات الفندق</string>
+    <string name="important">معلومات هامة</string>
+    <string name="amenities">المرافق</string>
+    <string name="near_and_around">المعالم القريبة</string>
+    <string name="provided_by_foursquare">هذه المعلومات من foursquare</string>
+    <string name="view_all">عرض الكل</string>
+    <string name="policies">السياسات</string>
+    <string name="reviews">التقييمات</string>
+    <string name="book_now">احجز الآن</string>
+    <string name="select_date">اختر التواريخ</string>
+    <string name="select_departure_date">اختر تاريخ المغادرة</string>
+    <string name="six_more">+6 المزيد</string>
+    <string name="select_another_date">اختر تاريخا آخر</string>
+    <string name="hotel_rooms_are_unavailable" formatted="false">عذرا، محجوزة إن الغرف بالكامل بتاريخ   %s الرجاء الاختيار من التواريخ الأخرى المتوفرة </string>
+
+    <!-- Staycation Calendar   -->
+
+    <string name="select_number_of_packages">اختر عدد البرامج</string>
+    <string name="book_this_deal_for">احجز هذا العرض مقابل</string>
+    <string name="available">متوفر</string>
+    <string name="available_on_request">عند الطلب</string>
+    <string name="night_s">ليالٍ</string>
+
+    <string name="need_help_with_booking">للحصول على المساعدة</string>
+    <string name="call_us_on">اتصل بنا على الرقم التالي: </string>
+    <string name="or">أو</string>
+    <string name="let_our_holiday_expert_call_you">اسمح لخبراء العطلات في هوليداي-مي بالتواصل معك</string>
+    <string name="full_name">الاسم</string>
+    <string name="your_comments">التعليقات</string>
+    <string name="submit">إرسال</string>
+    <string name="sold_out">محجوز بالكامل</string>
+
+
+    <string name="revert_shortly">سنتواصل معكم قريباً للإجابة على جميع استفساراتكم!</string>
+    <string name="alternatively">بإمكانكم أيضاً الاتصال بنا على الرقم التالي: %s للحصول على المساعدة. </string>
+    <string name="thankyou_for_choosing">شكراً لاختياركم هوليداي-مي.</string>
+    <string name="close">إغلاق</string>
+    <string name="request_submitted">تم إرسال الطلب</string>
+    <string name="total">المجموع</string>
+    <string name="filter_by">Filter By</string>
+    <string name="travellers">عدد المسافرين</string>
+    <string name="net_charges">صافي الرسوم</string>
+    <string name="tax_recovery_charges">رسوم استرداد الضرائب</string>
+
+
+
+    <string name="booking_policy_null">  سياسة الحجز غير متوفرة لهذا الفندق</string>
+    <string name="Retry">إعادة المحاولة </string>
+    <string name="cancel">الإلغاء</string>
+    <string name="less_ammenity">إخفاء المرافق</string>
+
+
+    <string name="number_package">البرنامج</string>
+    <string name="number_packages">البرامج</string>
+
+    // Autocomplete fragment
+
+    <string name="nearMe">القريبة </string>
+    <string name="recent">النتائج السابقة </string>
+
+    // Getaways index page short strings
+
+    <string name="getaways_actionbar_title">عدد الرحلات المتوفرة </string>
+    <string name="getaways_row_title">الرحلات </string>
+
+</resources>

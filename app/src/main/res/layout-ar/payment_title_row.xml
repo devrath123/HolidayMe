@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_payment_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_dark"
+        android:paddingLeft="@dimen/small_padding"
+        android:paddingBottom="@dimen/toolbar_horizontal_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:paddingTop="@dimen/side_padding">
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/txt_hotel_voucher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hotel_voucher_text"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="12sp"
+            />
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="@string/payment_details_text"
+            android:paddingTop="@dimen/padding_normal"
+            android:layout_below="@+id/txt_hotel_voucher"
+            android:textColor="@color/dark_gray_text_color"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/img_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:padding="3dp"
+            android:src="@drawable/ico_i"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/cardLayoutView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/relative_layout_payment_detail"
+        android:background="@color/blue" />
+
+    <RadioGroup
+        android:id="@+id/rdo_grp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cardLayoutView"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rdo_credit_card"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableRight="@drawable/card"
+            android:drawablePadding="10dp"
+            android:gravity="end"
+            android:padding="5dp"
+            android:textAllCaps="true"
+            android:textSize="12sp" />
+
+       <!-- <RadioButton
+            android:id="@+id/rdo_COD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/payment_mode_selector"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/cash_on_delivery"
+            android:textAllCaps="true"
+            android:textSize="12sp" />-->
+
+        <include
+            android:id="@+id/include_cod"
+            layout="@layout/card_payment_row"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/creditCardBottomLineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/value_deal_bg"
+            android:visibility="gone"/>
+
+
+        <RadioButton
+            android:id="@+id/visaCheckOutRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:drawableRight="@drawable/visa_checkout"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+     <!--   <LinearLayout
+            android:id="@+id/visaCheckoutLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="@string/what_is_visa_checkout"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="@string/visa_checkout_short_text"/>
+
+            <TextView
+                android:id="@+id/readMoreVisaCheckoutTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="@android:color/holo_red_dark"/>
+        </LinearLayout>
+-->
+        <View
+            android:id="@+id/visaCheckoutBottomLineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray_text_color"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/visaCheckoutSecondBottomLineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/value_deal_bg"
+            android:visibility="gone"/>
+
+
+        <RadioButton
+            android:id="@+id/masterCardRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:drawableRight="@drawable/masterpass"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+
+     <!--   <LinearLayout
+            android:id="@+id/masterPassLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="@string/what_is_masterpass"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="@string/master_pass_short_text"/>
+
+            <TextView
+                android:id="@+id/readMoreMasterPassTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="@android:color/holo_red_dark"/>
+        </LinearLayout>-->
+
+        <View
+            android:id="@+id/masterCardBottomLineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray_text_color"
+            android:visibility="gone"/>
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_below="@+id/rdo_grp"
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_dark"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/small_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:paddingTop="16.67dp"
+
+        android:layout_alignParentEnd="true">
+
+        <com.holidayme.widgets.LightFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/total_booking_amount"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/billingAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="6.67dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/colorRed"
+            android:textSize="20sp" />
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/txt_currency_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="@dimen/padding_normal"
+            android:text=""
+            android:textSize="12sp" />
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/txt_fair_brakeup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="@dimen/padding_normal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:text="@string/fare_breakup"
+            android:textColor="@color/blue"
+            android:textSize="12sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="6.67dp">
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/privacyPolicyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/txt_proceed_pay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_red_rounded_button"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/pay_securely"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+          />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/ico_nortron"
+            android:textSize="12sp"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+    <!--
+        <LinearLayout
+            android:id="@+id/layout_include"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_payment_desc"
+            android:layout_alignParentEnd="true">
+
+            <LinearLayout
+                android:id="@+id/layout_cod_include"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/include_cod"
+                    layout="@layout/cod_payment_row" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_card_include"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/include_cod"
+                    layout="@layout/card_payment_row" />
+            </LinearLayout>
+        </LinearLayout>
+    -->
+
+</RelativeLayout>

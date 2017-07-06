@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+       android:paddingTop="@dimen/common_padding_small"
+        android:paddingBottom="@dimen/common_padding_small"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+        <!-- Room  -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+
+            android:layout_height="wrap_content">
+
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/Rooms"
+                android:id="@+id/room_title"
+                android:layout_height="wrap_content" />
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="fill_parent"
+                android:id="@+id/room_text"
+                android:maxLines="1"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorRed"
+                android:layout_below="@+id/room_title"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/devider_afteradults"
+                android:layout_height="20dp"/>
+
+        </RelativeLayout>
+
+        <!-- Adults  -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+
+
+            android:layout_height="wrap_content">
+
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/Traveller"
+                android:id="@+id/Traveller_title"
+                android:layout_height="wrap_content" />
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="fill_parent"
+                android:id="@+id/Traveller_text"
+                android:maxLines="1"
+                android:gravity="center"
+                android:text=""
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorRed"
+                android:layout_below="@+id/Traveller_title"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/devider_afteradults"
+                android:layout_height="20dp"/>
+
+
+        </RelativeLayout>
+        <!-- Kids  -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content">
+
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/Totals"
+                android:id="@+id/Total_title"
+                android:layout_height="wrap_content" />
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="fill_parent"
+                android:id="@+id/Total_text"
+                android:maxLines="1"
+                android:gravity="center"
+                android:text=""
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorRed"
+                android:layout_below="@+id/Total_title"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:background="@drawable/devider_afteradults"
+        android:layout_height="2dp"/>
+
+
+    <!-- Second Raw -->
+
+</LinearLayout>

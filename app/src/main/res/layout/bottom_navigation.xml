@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bottom_navigation_shadow"
+    android:outlineProvider="bounds"
+    android:elevation="5dp"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/centerView"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/hotelsRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+
+        android:layout_toStartOf="@+id/centerView">
+
+
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/hotelsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/hotel_active"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="15sp"
+            android:text="@string/hotel"
+            android:textColor="@color/bottom_navigation_active_textcolor"/>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/getawaysRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_toEndOf="@+id/centerView">
+
+
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/gatewaysTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/getaways"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/getaways_title"
+            android:textColor="@color/light_gray_text_color"
+            android:textSize="15sp"
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

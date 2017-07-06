@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_header"
+        layout="@layout/header_with_title_and_back"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_ok"
+        android:layout_below="@+id/top_header">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:orientation="vertical"
+                 android:id="@+id/top_linear_layout"
+                 android:layout_height="wrap_content">
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+             <com.holidayme.widgets.MediumFontTextView
+                 android:id="@+id/txt_gross_total"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentStart="true"
+                 android:text="@string/Gross_total"
+                 android:padding="10dp"
+
+                 android:textColor="@color/light_gray_text_color" />
+
+             <com.holidayme.widgets.MediumFontTextView
+                 android:id="@+id/txt_gross_total_value"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentEnd="true"
+                 android:text=""
+                 android:padding="10dp"
+                 android:textColor="@color/black"
+                 tools:ignore="RelativeOverlap" />
+
+             <View
+                 android:layout_width="match_parent"
+                 android:background="@color/value_deal_bg"
+                 android:layout_height="1dp"
+                 android:layout_alignBottom="@+id/txt_gross_total"
+                 />
+          </RelativeLayout>
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <com.holidayme.widgets.MediumFontTextView
+                         android:id="@+id/txt_taxes_fees"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentStart="true"
+                         android:text="@string/txes_fees"
+                         android:padding="10dp"
+                         android:textColor="@color/light_gray_text_color" />
+
+                     <com.holidayme.widgets.MediumFontTextView
+                         android:id="@+id/txt_taxes_fees_value"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentEnd="true"
+                         android:text=""
+                         android:padding="10dp"
+                         android:textColor="@color/black"
+                         tools:ignore="RelativeOverlap" />
+
+                     <View
+                         android:layout_width="match_parent"
+                         android:background="@color/value_deal_bg"
+                         android:layout_height="1dp"
+
+                         android:layout_alignBottom="@+id/txt_taxes_fees"
+                         />
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <com.holidayme.widgets.MediumFontTextView
+                         android:id="@+id/lable"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentStart="true"
+                         android:text="@string/Grand_Total"
+                         android:padding="10dp"
+                         android:textColor="@color/light_gray_text_color" />
+
+                     <com.holidayme.widgets.MediumFontTextView
+                         android:id="@+id/txt_grang_total_value"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentEnd="true"
+                         android:text=""
+                         android:padding="10dp"
+                         android:textColor="@color/black"
+                         tools:ignore="RelativeOverlap" />
+
+                     <View
+                         android:layout_width="match_parent"
+                         android:background="@color/value_deal_bg"
+                         android:layout_height="1dp"
+                         android:layout_alignBottom="@+id/lable"
+                         />
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <com.holidayme.widgets.MediumFontTextView
+                         android:id="@+id/txt_discount"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentStart="true"
+                         android:text="@string/Dicount"
+                         android:padding="10dp"
+                         android:textColor="@color/light_gray_text_color" />
+
+                     <com.holidayme.widgets.MediumFontTextView
+                         android:id="@+id/txt_discount_value"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentEnd="true"
+                         android:text=""
+                         android:padding="10dp"
+                         android:textColor="@color/black"
+                         tools:ignore="RelativeOverlap" />
+
+                     <View
+                         android:layout_width="match_parent"
+                         android:background="@color/value_deal_bg"
+                         android:layout_height="1dp"
+                         android:layout_alignBottom="@+id/txt_discount"
+                         />
+                 </RelativeLayout>
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:background="@color/background_dark"
+                     android:layout_height="wrap_content">
+                     <com.holidayme.widgets.LightFontTextView
+                         android:id="@+id/txt_lable"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentEnd="true"
+                         android:text="@string/Avrage_night_brake"
+                         android:padding="10dp"
+                         android:gravity="center"
+                         android:textColor="@color/light_gray_text_color" />
+
+                     <View
+                         android:layout_width="match_parent"
+                         android:background="@color/value_deal_bg"
+                         android:layout_height="1dp"
+                         android:layout_alignBottom="@+id/txt_lable"
+                         />
+                 </RelativeLayout>
+             </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fare_breakup_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_linear_layout"
+            android:orientation="vertical">
+        </LinearLayout>
+
+
+         </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        android:padding="10dp"
+        android:text="@string/ok"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

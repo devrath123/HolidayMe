@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_spinner_salutation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingStart="22dp"
+        android:paddingEnd="@dimen/padding_normal">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:dropDownWidth="80dp"
+            android:id="@+id/spinner_salutation"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewSalutation"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@+id/layout_spinner_salutation"
+        android:background="@color/value_deal_bg" />
+    <com.holidayme.widgets.LightFontEditText
+
+        android:id="@+id/editText_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/first_name"
+        android:inputType="textPersonName|textNoSuggestions"
+        android:maxLines="1"
+        android:textSize="14sp"
+        android:textColorHint="#c3c3c3"
+        android:paddingLeft="@dimen/small_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:paddingStart="@dimen/small_padding"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/viewSalutation"
+        android:layout_toStartOf="@+id/clear_text_first_name"
+        />
+    <View
+        android:id="@+id/nameView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/editText_first_name"
+        android:background="@color/value_deal_bg">
+
+    </View>
+
+    <com.holidayme.widgets.LightFontEditText
+        android:id="@+id/edt_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/nameView"
+        android:background="@android:color/transparent"
+        android:hint="@string/Last_Name"
+        android:inputType="textPersonName|textNoSuggestions"
+        android:maxLines="1"
+        android:textColorHint="#c3c3c3"
+        android:paddingLeft="@dimen/small_padding"
+        android:paddingStart="22dp"
+        android:paddingRight="@dimen/small_padding"
+        android:textSize="14sp"
+        android:layout_toStartOf="@+id/clear_text_last_name"
+
+        />
+
+    <View
+        android:id="@+id/lastNameView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/edt_last_name"
+        android:background="@color/value_deal_bg" />
+
+    <com.holidayme.widgets.LightFontEditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lastNameView"
+        android:background="@android:color/transparent"
+        android:hint="@string/Email_Address"
+        android:inputType="textNoSuggestions|textEmailAddress"
+        android:maxLines="1"
+        android:textColorHint="#c3c3c3"
+        android:paddingLeft="@dimen/small_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:layout_toStartOf="@+id/clear_text_email"
+        android:paddingStart="22dp"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/emailView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/edt_email"
+        android:background="@color/value_deal_bg" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailView">
+
+        <LinearLayout
+            android:id="@+id/layout_spinner_county_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingStart="22dp"
+            android:paddingEnd="@dimen/padding_normal">
+
+            <Spinner
+                android:id="@+id/spinner_county_code"
+                android:layout_width="wrap_content"
+                android:spinnerMode="dialog"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@+id/layout_spinner_county_code"
+            android:background="@color/value_deal_bg" />
+
+        <com.holidayme.widgets.LightFontEditText
+
+            android:id="@+id/editText_mob_no"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/layout_spinner_county_code"
+            android:background="@android:color/transparent"
+            android:hint="@string/Mob_No"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColorHint="#c3c3c3"
+            android:paddingLeft="@dimen/small_padding"
+            android:paddingRight="@dimen/small_padding"
+            android:paddingStart="@dimen/small_padding"
+            android:layout_toStartOf="@+id/clear_text_mobile"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/mobileNoView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/editText_mob_no"
+            android:background="@color/value_deal_bg" />
+
+        <ImageView
+            android:id="@+id/clear_text_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_padding"
+            android:src="@drawable/d_close"
+            android:visibility="invisible"
+            android:layout_alignParentEnd="true"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinner_nationality"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/relative_layout"
+        android:paddingLeft="@dimen/small_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:paddingStart="22dp"/>
+
+    <View
+        android:id="@+id/currencyView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/spinner_nationality"
+        android:background="@color/value_deal_bg" />
+
+    <com.holidayme.widgets.MediumFontTextView
+        android:id="@+id/txt_special_request"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/currencyView"
+        android:drawableStart="@drawable/ico_checkbox"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/small_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:paddingStart="@dimen/small_padding"
+        android:text="@string/special_request"
+        android:visibility="gone"
+        android:textColor="@color/blue"
+        android:textSize="14sp" />
+
+
+    <ImageView
+        android:id="@+id/clear_text_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding"
+        android:src="@drawable/d_close"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/clear_text_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding"
+        android:src="@drawable/d_close"
+        android:visibility="invisible"
+        android:layout_below="@+id/nameView"
+        android:layout_alignParentEnd="true"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/clear_text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding"
+        android:src="@drawable/d_close"
+        android:visibility="invisible"
+        android:layout_below="@+id/edt_last_name"
+        android:layout_alignParentEnd="true"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

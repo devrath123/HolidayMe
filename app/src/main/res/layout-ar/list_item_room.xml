@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="2dp"
+    android:background="@color/staycation_theme"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/roomLinearLayout"
+        android:layout_width="fill_parent"
+        android:padding="@dimen/common_padding_small"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grey_rounded_rectangle"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_marginTop="@dimen/common_padding_small"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/roomTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            android:textColor="@color/accent" />
+        <com.holidayme.widgets.LightFontTextView
+            android:layout_width="match_parent"
+            android:text="@string/max_adults"
+            android:id="@+id/adultCountTextView"
+            android:layout_marginTop="@dimen/common_padding_small"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:textSize="@dimen/commonSmallTextSize"
+            android:drawableStart="@drawable/d_max_adult"
+            android:layout_height="wrap_content" />
+        <com.holidayme.widgets.LightFontTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/cancellationStatusTextView"
+            android:layout_marginTop="@dimen/common_padding_small"
+            android:textSize="@dimen/commonSmallTextSize"
+            android:drawableStart="@drawable/icn_non_refundable"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:textColor="@color/colorRed"
+            android:layout_height="wrap_content" />
+        <com.holidayme.widgets.LightFontTextView
+            android:layout_width="wrap_content"
+            android:text="@string/includes"
+            android:id="@+id/inclusionTextView"
+            android:layout_marginTop="@dimen/common_padding_small"
+            android:textColor="@color/green"
+            android:maxLines="1"
+            android:textSize="@dimen/commonSmallTextSize"
+            android:drawableStart="@drawable/icn_free_cancellation"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:layout_height="wrap_content" />
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/cancellationPolicyTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/cancellation_policy"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:gravity="bottom"
+            android:maxLines="1"
+            android:textSize="@dimen/commonSmallTextSize"
+            android:paddingTop="@dimen/common_padding_small"
+            android:paddingBottom="@dimen/common_padding_small"
+            android:textColor="@color/blue"
+            android:text="@string/Cancellation_Policy" />
+
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="4.5"
+            android:gravity="end"
+            android:layout_marginTop="@dimen/common_padding_small"
+            android:layout_height="wrap_content">
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:id="@+id/roomPriceTextView"
+                android:textColor="@color/pink"
+                android:textSize="15sp"
+                android:layout_height="wrap_content" />
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/priceForTextView"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:textSize="@dimen/commonExtraSmallTextSize"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="wrap_content"
+                android:text="@string/Taxes_not_included"
+                android:id="@+id/taxStatusTextView"
+                android:gravity="center"
+                android:textSize="8sp"
+                android:layout_height="wrap_content"
+                tools:ignore="SmallSp" />
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/payAtHotelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_green_rounded_button"
+                android:paddingLeft="@dimen/common_padding_small"
+                android:paddingRight="@dimen/common_padding_small"
+                android:paddingTop="@dimen/common_padding_small"
+                android:paddingBottom="@dimen/common_padding_small"
+                android:textSize="@dimen/commonExtraSmallTextSize"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:text="@string/payat_hotel"
+                android:textColor="@color/white"/>
+            <com.holidayme.widgets.MediumFontTextView
+                android:id="@+id/bookingTextView"
+                android:layout_width="100dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:text="@string/Book_now"
+                android:padding="4dp"
+                android:gravity="center"
+                android:background="@drawable/book_button_bg"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@+id/cancelation_text"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+</LinearLayout>

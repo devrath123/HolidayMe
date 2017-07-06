@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/Select_currency_padding"
+    android:paddingRight="@dimen/Select_currency_padding"
+    android:paddingTop="@dimen/padding_normal"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/locationRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/common_padding_small"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+        <CheckBox
+            android:id="@+id/filterCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/filter_check_box_bg"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:clickable="false"
+            android:layout_centerVertical="true"
+
+            />
+
+        <com.holidayme.widgets.LightFontTextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/filterCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:text="1"
+            android:textColor="@color/light_purple"
+
+            />
+
+        <com.holidayme.widgets.LightFontTextView
+
+            android:id="@+id/hotelTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/commonSmallTextSize"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginEnd="@dimen/common_padding_small"
+            android:layout_marginStart="@dimen/common_padding_small"
+            android:layout_toEndOf="@+id/filterCheckBox"
+            android:layout_toStartOf="@+id/filterCountTextView"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/add_room_bg"
+    android:layout_marginTop="@dimen/padding_normal"
+    android:layout_marginLeft="@dimen/padding_end"
+    android:layout_marginStart="@dimen/padding_end"
+    android:layout_marginRight="@dimen/padding_end"
+    android:layout_marginEnd="@dimen/padding_end"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/roomTopBarRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/roomCountTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_small"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/dark_gray_text_color"
+            android:textSize="12sp" />
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/membersCountTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roomCountTextView"
+            android:layout_marginBottom="@dimen/common_padding_small"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/light_gray_text_color"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            tools:ignore="SmallSp" />
+
+        <ImageView
+            android:id="@+id/closeWindowImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/common_padding_small"
+            android:paddingEnd="@dimen/padding_end"
+            android:paddingStart="@dimen/padding_end"
+            android:src="@drawable/icn_close"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/topBarView"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/roomTopBarRelativeLayout"
+        android:background="@drawable/div_room_header"
+
+        />
+    <RelativeLayout
+        android:id="@+id/windowRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/topBarView"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+
+        <LinearLayout
+            android:id="@+id/adultLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/common_padding_small">
+
+            <com.holidayme.widgets.HorizontalNumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adultCountNumberPicker"
+                android:layout_gravity="center"
+
+
+               />
+
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Adults"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_gray_text_color"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_normal"
+                android:paddingTop="@dimen/common_padding_small"
+                android:text="@string/Above_17_years"
+                android:textSize="10sp"
+                android:textColor="@color/light_gray_text_color"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/childLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:paddingTop="@dimen/common_padding_small">
+
+            <com.holidayme.widgets.KIDSHorizontalNumberPicker
+                android:id="@+id/kidCountNumberPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                />
+
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Kids"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_gray_text_color"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_normal"
+                android:paddingTop="@dimen/common_padding_small"
+                android:text="@string/Below_17_years"
+                android:textSize="10sp"
+                android:textColor="@color/light_gray_text_color"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+    <View
+        android:id="@+id/dividerView"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout_count"
+        android:layout_marginEnd="@dimen/padding_end"
+        android:layout_marginLeft="@dimen/padding_end"
+        android:layout_marginRight="@dimen/padding_end"
+        android:layout_marginStart="@dimen/padding_end"
+        android:visibility="gone"
+        android:background="@drawable/devider_afteradults" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dividerView"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/firstChildAgeRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/common_padding_small">
+
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/firstChildTitleTextView"
+                android:text="@string/Age_of_child_1"
+                android:textAllCaps="true"
+                android:textSize="10sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                tools:ignore="SmallSp" />
+
+            <SeekBar
+                android:id="@+id/firstChildAgeSeekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstChildTitleTextView"
+                android:max="17"
+                android:progress="1"
+                android:layout_marginStart="@dimen/padding_end"
+                android:thumb="@drawable/circle_handle"
+                android:layout_toStartOf="@+id/firstKidAgeTextView"
+                />
+            <com.holidayme.widgets.MediumFontTextView
+                android:id="@+id/firstKidAgeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year"
+                android:textColor="@color/text_sky_blue"
+                android:layout_marginEnd="@dimen/padding_end"
+                android:layout_centerVertical="true"
+                android:textSize="8sp"
+                android:layout_alignParentEnd="true"
+                tools:ignore="SmallSp" />
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/firstChildAgeMinValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstChildAgeSeekBar"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/padding_end"
+                android:textSize="8sp"
+                android:textColor="@color/light_gray_text_color"
+                android:text="1"
+                tools:ignore="HardcodedText,SmallSp" />
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/childAgeMaxTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:textColor="@color/light_gray_text_color"
+                android:text="17"
+                android:layout_marginEnd="@dimen/padding_end"
+                android:layout_below="@+id/firstChildAgeSeekBar"
+                android:layout_alignEnd="@+id/firstChildAgeSeekBar"
+                tools:ignore="HardcodedText,SmallSp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/secondChildAgeRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:paddingTop="@dimen/common_padding_small"
+            android:orientation="horizontal"
+          >
+
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="@string/Age_of_child_2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="true"
+                android:id="@+id/secondChildTitleTextView"
+                tools:ignore="SmallSp" />
+
+            <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondChildTitleTextView"
+                android:layout_marginStart="@dimen/padding_end"
+                android:max="17"
+                android:progress="1"
+                android:layout_toStartOf="@+id/secondKidAgeTextView"
+                android:thumb="@drawable/circle_handle"
+                android:id="@+id/secondChildAgeSeekBar" />
+            <com.holidayme.widgets.MediumFontTextView
+                android:id="@+id/secondKidAgeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year"
+                android:textSize="8sp"
+                android:textColor="@color/text_sky_blue"
+                android:layout_marginEnd="@dimen/padding_end"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="SmallSp" />
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/secondChildAgeMinValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondChildAgeSeekBar"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/padding_end"
+                android:textSize="8sp"
+                android:textColor="@color/light_gray_text_color"
+                android:text="1"
+                tools:ignore="HardcodedText,SmallSp" />
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/secondChildAgeMaxValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:textColor="@color/light_gray_text_color"
+                android:text="17"
+                android:paddingBottom="3dp"
+                android:layout_marginEnd="@dimen/padding_end"
+                android:layout_below="@+id/secondChildAgeSeekBar"
+                android:layout_alignEnd="@+id/secondChildAgeSeekBar"
+                tools:ignore="HardcodedText,SmallSp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linearLayout2"
+        android:background="@drawable/div_room_header"
+
+        />
+    <LinearLayout
+        android:layout_below="@+id/view4"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:id="@+id/add_layout"
+        android:layout_height="40dp">
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/addRoomTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/common_padding_small"
+            android:textSize="13sp"
+            android:textColor="@color/colorRed"
+            android:text="@string/addroom"/>
+        <View
+            android:id="@+id/view5"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/div_bottom_vertical"
+
+            />
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/doneButtonTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:padding="@dimen/common_padding_small"
+            android:textColor="@color/colorRed"
+            android:text="@string/Done"/>
+    </LinearLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>

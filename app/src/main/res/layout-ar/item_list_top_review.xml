@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingTop="@dimen/common_padding_small"
+    android:paddingBottom="@dimen/common_padding_small"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:text="@string/Hotel_name"
+            android:id="@+id/reviewTitleTextView"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/TripAdviserReviewImageView"
+        android:src="@drawable/icn_trip_adviser"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        tools:ignore="ContentDescription"
+        android:scaleX="-1"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/publishDateTextView"
+        android:layout_marginTop="@dimen/common_padding_small"
+        android:textSize="@dimen/commonExtraSmallTextSize"
+        android:layout_height="wrap_content" />
+
+    <com.holidayme.widgets.LightFontTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/reviewDetailTextView"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:maxLines="4"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlHardcoded" />
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorRed">#F50057</color>
+    <color name="primary">#abcdef</color>
+    <color name="primary_dark">#003470</color>
+    <color name="primary_light">#3390BD</color>
+    <color name="accent">#3390BD</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="green">#00a651</color>
+    <color name="white_text_color">#ffffff</color>
+    <color name="gray_line">#F5F5F5</color>
+
+    <color name="acutocomplete_header">#3390bc</color>
+
+    <!-- supriya -->
+
+    <color name="Bluish_black">#06233f</color>
+    <color name="NeviBlue">#6B82A5</color>
+
+    <color name="blue">#448aff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="pink">#B70c5B</color>
+
+    <color name="corrency_blue">#207AA4</color>
+    <color name="save_pink">#FF0062</color>
+    <color name="transparan">#e5F3FB</color>
+    <color name="text_sky_light">#3F51B5</color>
+
+    <color name="navigationBlueColor">#243c4c</color>
+    <color name="navigationDividerColor">#535C72</color>
+    <color name="nonrefundableRed">#ff0000</color>
+
+    <color name="value_deal_bg">#95B2B2B2</color>
+    <color name="off_white">#8b95a7</color>
+    <color name="gray_black">#636363</color>
+
+    <color name="dark_gray_text_color">#666666</color>
+    <color name="light_gray_text_color">#999999</color>
+    <color name="text_sky_blue">#3390bd</color>
+    <color name="action_bar_text">#116188</color>
+    <color name="grid_back">#272727</color>
+    <color name="orrange">#ff622a13</color>
+    <color name="autocomplete_item_bg_color">#131E36</color>
+    <color name="autocomplete_item_title_bg_color">#0A0F1C</color>
+    <color name="list_divider_color">#23334D</color>
+    <color name="filtertextcolor">#718089</color>
+    <color name="light_orange">#ff8000</color>
+    <color name="transparent">#0000</color>
+    <color name="custom_dialog_button_text">#017BFF</color>
+    <color name="selected_langorcurrency">#ffe400</color>
+    <color name="background_dark">#EFEFF4</color>
+    <color name="apply_coupon_bg">#60FFFFFF</color>
+    <color name="red_text">#CC4035</color>
+    <color name="back_text">#203542</color>
+    <color name="cancelled_status">#60ffe400</color>
+    <color name="confirmed_status">#6000a651</color>
+    <color name="light_grey">#D3D3D3</color>
+    <color name="dark_blue">#000080</color>
+    <color name="light_blue">#19198c</color>
+    <color name="little_dark_grey">#C0C0C0</color>
+
+    <color name="white_gray">#e8ebf2</color>
+    <color name="staycation_theme">#E6E9F1</color>
+    <color name="tick_green">#6BC259</color>
+    <color name="light_purple">#3F51B5</color>
+    <color name="light_yellow">#FFD042</color>
+    <color name="brown">#670f08</color>
+    <color name="light_nevi_blue">#9EABBC</color>
+    <color name="dark_nevi_blue">#182B5F</color>
+
+    <color name="title_gray_background">#CBD0D6</color>
+    <color name="bottom_navigation_active_textcolor">#3091be</color>
+
+    <color name="purple">#3e4fb1</color>
+
+
+
+</resources>

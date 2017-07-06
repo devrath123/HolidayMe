@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/gateway_index_page_row_height"
+    card_view:cardUseCompatPadding="true"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginBottom="2dp"
+    card_view:cardCornerRadius="@dimen/gateway_index_page_row_corner">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/gatewayImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/common_gateway_index_row_text_start_padding"
+                android:background="@drawable/gateways_index_page_shadow"
+                android:gravity="bottom|start"
+                tools:ignore="RtlSymmetry">
+
+                <com.holidayme.widgets.BoldFontTextView
+                    android:id="@+id/gateWayCountryNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_above="@+id/gateWaysCountTextView"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/large_gateway_text_size"
+                    android:textColor="@color/white"
+                    android:text=""/>
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/gateWaysCountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_gateway_index_row_bottom_margin"
+                    android:textSize="@dimen/medium_gateway_text_size"
+                    android:layout_alignParentBottom="true"
+                    android:text=""
+                    android:textColor="@color/white"/>
+
+
+            </RelativeLayout>
+
+
+
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>

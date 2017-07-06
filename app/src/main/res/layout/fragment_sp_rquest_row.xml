@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sp_req_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/check_sp_req"
+        android:layout_width="wrap_content"
+        android:clickable="false"
+        android:layout_height="wrap_content"
+        android:background="@drawable/special_request_selector"
+        android:button="@android:color/transparent"
+        android:layout_marginStart="@dimen/small_padding"
+        android:layout_marginEnd="@dimen/small_padding"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:id="@+id/viewSalutation"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txt_sp_req"
+        android:background="@color/value_deal_bg" />
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/txt_sp_req"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="@dimen/small_padding"
+        android:maxLines="1"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/check_sp_req" />
+</RelativeLayout>

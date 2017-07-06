@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:id="@+id/nearAndAroundRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:layout_weight="0.075"
+            android:id="@+id/nearItemImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/nearNameTextView"
+            android:layout_width="0dp"
+            android:layout_weight="0.675"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Shopping Mall"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            />
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/nearDistanceTextView"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.77 km"
+            android:textSize="13sp"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="2dp"
+            android:gravity="left"
+            android:layout_gravity="center_vertical"/>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/nearAndAroundRow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey"/>
+</RelativeLayout>

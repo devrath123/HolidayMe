@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_header"
+        layout="@layout/header_with_title_and_back"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_sp_req"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radio_group"
+        android:layout_below="@+id/top_header" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/topBarView"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdo_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/save_button_selector"
+            android:button="@color/transparent"
+            android:checked="false"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/Cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/text_selector"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdo_apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/save_button_selector"
+            android:button="@color/transparent"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/save"
+            android:textAllCaps="true"
+            android:textColor="@color/text_selector"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/topBarView"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue" />
+
+</RelativeLayout>

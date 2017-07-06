@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+    <com.holidayme.widgets.MediumFontTextView
+        android:id="@+id/departureCitySmall_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEL"
+        android:layout_marginRight="5dp"/>
+
+    <com.holidayme.widgets.MediumFontTextView
+        android:id="@+id/departureTime_TextView"
+        android:layout_toRightOf="@+id/departureCitySmall_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03:20"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/departureCity_TextView"
+        android:layout_below="@+id/departureCitySmall_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="New Delhi"
+        android:textSize="10sp"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/departureDate_TextView"
+        android:layout_below="@+id/departureCity_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 November, 2017"
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"/>
+
+
+
+
+    <com.holidayme.widgets.MediumFontTextView
+        android:layout_alignParentRight="true"
+        android:id="@+id/arrivalTime_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09:30"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <com.holidayme.widgets.MediumFontTextView
+        android:layout_toLeftOf="@id/arrivalTime_TextView"
+        android:id="@+id/arrivalCitySmall_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BKK"
+        android:layout_marginRight="5dp"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/arrivalCity_TextView"
+        android:layout_below="@+id/arrivalCitySmall_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bangkok"
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/arrivalDate_TextView"
+        android:layout_below="@+id/departureCity_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 November, 2017"
+        android:textSize="10sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"/>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/arrivalDate_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey"/>
+
+
+</RelativeLayout>

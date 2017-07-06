@@ -1,0 +1,493 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerRelativeLayout"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/loginRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/padding_normal"
+        android:paddingRight="@dimen/padding_normal">
+
+        <ImageView
+            android:id="@+id/loginImageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/login"
+            tools:ignore="ContentDescription" />
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_normal"
+            android:layout_toEndOf="@+id/loginImageView"
+            android:paddingTop="4dp"
+            android:text="@string/welcome_guest"
+            android:maxLines="1"
+            android:textColor="@color/light_purple"
+            android:textSize="20sp" />
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/logInInstructionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userNameTextView"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="@dimen/padding_normal"
+            android:layout_toEndOf="@+id/loginImageView"
+            android:paddingTop="5dp"
+            android:text="@string/tap_here_to_login"
+            android:textColor="@color/dark_gray_text_color"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_red_rounded_button"
+            android:text="@string/login"
+            android:textColor="@color/white_text_color"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+
+        android:id="@+id/topBarView"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/loginRelativeLayout"
+        android:layout_marginTop="@dimen/x_small_padding"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:background="@color/navigationDividerColor" />
+
+
+    <!-- home -->
+
+
+    <LinearLayout
+        android:id="@+id/languageLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topBarView"
+        android:layout_gravity="center_vertical"
+        android:background="#E6E6E6"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginEnd="1.5dp"
+        android:layout_marginStart="1.5dp"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/englishRelativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/languageLabelTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp"
+                android:text="@string/laguage"
+                android:textColor="@color/dark_gray_text_color"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/relative_en"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/languageLabelTextView"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <com.holidayme.widgets.MediumFontTextView
+                    android:id="@+id/languageSelectedTextView"
+                    style="@style/CodeFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/default_lang"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/languageImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/common_padding_small"
+                    android:src="@drawable/arrow_d"
+                    android:tag="1"
+                    tools:ignore="ContentDescription" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/englishSelectedView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/relative_en"
+                android:background="@color/light_purple"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/hor_view"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="@drawable/divider" />
+
+        <RelativeLayout
+            android:id="@+id/currencyRelativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+
+            >
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/currencyLabelTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp"
+                android:text="@string/currency"
+                android:textColor="@color/dark_gray_text_color"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/relative_lang"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currencyLabelTextView"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <com.holidayme.widgets.MediumFontTextView
+                    android:id="@+id/currencyTextView"
+                    style="@style/CodeFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAR"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/currencyImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/common_padding_small"
+                    android:src="@drawable/arrow_d"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/languageSelectedView"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/relative_lang"
+                android:background="@color/light_purple"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/languageLinearLayout"
+        android:layout_marginEnd="1.5dp"
+        android:layout_marginStart="1.5dp"
+        android:background="@color/navigationDividerColor" />
+
+    <LinearLayout
+        android:id="@+id/languageSectionLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view6"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_padding_small"
+        android:paddingTop="@dimen/common_padding_small"
+        android:visibility="gone">
+
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/englishTextView"
+            style="@style/CodeFont"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/common_padding_small"
+            android:text="@string/EN" />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/navigationDividerColor"
+            android:visibility="visible" />
+
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/arabicTextView"
+            style="@style/CodeFont"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/common_padding_small"
+            android:text="@string/AR" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dividerView"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/languageSectionLinearLayout"
+        android:layout_marginLeft="@dimen/padding_normal"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:background="@color/navigationDividerColor"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/currencySelectionLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view6"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_padding_small"
+        android:paddingTop="@dimen/common_padding_small"
+        android:visibility="gone">
+
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/sarTextView"
+            style="@style/CodeFont"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/common_padding_small"
+            android:text="AED"
+            tools:ignore="HardcodedText" />
+
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/navigationDividerColor"
+            android:visibility="visible" />
+
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/aedTextView"
+            style="@style/CodeFont"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/common_padding_small"
+            android:text="SAR"
+            tools:ignore="HardcodedText" />
+
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/navigationDividerColor" />
+
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/usdTextView"
+            style="@style/CodeFont"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/common_padding_small"
+            android:text="USD"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/currencyView"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/currencySelectionLinearLayout"
+        android:layout_marginLeft="@dimen/padding_normal"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:background="@color/navigationDividerColor"
+        android:visibility="gone" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currencyView"
+        android:childDivider="#00000000"
+        android:divider="@color/navigationDividerColor"
+        android:dividerHeight="0.5dp"
+        android:groupIndicator="@android:color/transparent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/lastDividerView"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/expandableListView"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/navigationDividerColor"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastDividerView">
+
+        <RadioButton
+            android:id="@+id/indexRadioButton"
+            style="@style/CodeFont"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector"
+            android:button="@null"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingRight="@dimen/padding_normal"
+            android:paddingStart="20dp"
+            android:text="@string/nav_item_home" />
+
+        <RadioButton
+            android:id="@+id/myProfileRadioButton"
+            style="@style/CodeFont"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector"
+            android:button="@null"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingRight="@dimen/padding_normal"
+            android:paddingStart="20dp"
+            android:drawablePadding="10dp"
+
+            android:text="@string/nav_item_profile" />
+
+        <RadioButton
+            android:id="@+id/myBookingsRadioButton"
+            style="@style/CodeFont"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector"
+            android:button="@null"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingRight="@dimen/padding_normal"
+            android:paddingStart="20dp"
+            android:text="@string/nav_item_booking" />
+
+        <RadioButton
+            android:id="@+id/contactUsRadioButton"
+            style="@style/CodeFont"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector"
+            android:button="@null"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingStart="20dp"
+            android:paddingRight="@dimen/padding_normal"
+            android:text="@string/nav_item_contact_us" />
+
+        <RadioButton
+            android:id="@+id/termsOfUseRadioButton"
+            style="@style/CodeFont"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector"
+            android:button="@null"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingStart="20dp"
+            android:paddingRight="@dimen/padding_normal"
+            android:text="@string/nav_item_terms_of_use" />
+
+        <RadioButton
+            android:id="@+id/privacyPolicyRadioButton"
+            style="@style/CodeFont"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector"
+            android:button="@null"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingStart="20dp"
+            android:paddingRight="@dimen/padding_normal"
+            android:text="@string/nav_item_privacy_policy" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/logOutLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_normal"
+        android:paddingRight="@dimen/padding_normal"
+        android:paddingStart="@dimen/padding_normal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logout"
+            tools:ignore="ContentDescription" />
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/logOutButton"
+            style="@style/CodeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/log_out" />
+    </LinearLayout>
+
+</RelativeLayout>

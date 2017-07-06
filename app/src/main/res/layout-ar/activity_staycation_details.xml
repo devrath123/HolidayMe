@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:id="@+id/coordinateLayout"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:fitsSystemWindows="true"
+                                                 android:theme="@style/Theme.DesignDemo"
+                                                 android:clickable="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_backdrop_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <net.opacapp.multilinecollapsingtoolbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleGravity="right"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleGravity="center"
+            app:expandedTitleMarginEnd="10dp"
+            app:expandedTitleMarginStart="10dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/backdropImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/icn_default_image_loading"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"/>
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/stycation_listing_bg"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY"
+                app:layout_collapseMode="parallax"/>
+
+            <com.holidayme.widgets.BoldFontTextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text=" Deira, PO Box 5588, Dubai, UAE "
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:expandedTitleGravity="center"
+                android:gravity="center"
+                app:expandedTitleMarginEnd="10dp"
+                app:layout_collapseMode="parallax"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                />
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/addressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="60dp"
+                android:drawableRight="@drawable/icon_location"
+                android:text=" Deira, PO Box 5588, Dubai, UAE"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:expandedTitleGravity="bottom|center_horizontal"
+                android:gravity="center"
+                app:expandedTitleMarginEnd="10dp"
+                app:expandedTitleMarginStart="10dp"
+                app:layout_collapseMode="parallax"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarNew"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:expandedTitleGravity="top"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:layout_marginRight="10dp"
+                android:gravity="end"
+                android:layout_gravity="end">
+
+                <ImageView
+                    android:id="@+id/backImageView_Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_back_white"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    />
+
+                </android.support.v7.widget.Toolbar>
+
+        </net.opacapp.multilinecollapsingtoolbar.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/imageRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="16dp"
+        android:background="@drawable/black_rounded_corner"
+        android:padding="5dp"
+        android:alpha="0.5"
+        >
+
+        <ImageView
+            android:id="@+id/cameraImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/camera"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"/>
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/imageCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/cameraImageView"
+            android:text="+15"
+            android:textColor="@color/white"
+
+            />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:background="@color/background_dark"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appbar"
+                android:background="@android:color/white"
+                >
+
+                <!--<ImageView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/distanceImageView"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/icn_distance"/>
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/distanceValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@+id/distanceImageView"
+                    android:text="1.25 km"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/distanceTextView"
+                    android:layout_below="@+id/distanceValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@id/distanceImageView"
+                    android:text="distance"
+                    />-->
+
+                <com.holidayme.widgets.LightFontTextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/ratingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="3.5"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/ratingTextView"
+                    android:scaleX="-1"
+                    android:rotationY="180"
+                    android:supportsRtl="true"
+                    android:theme="@style/RatingBar"
+                    />
+
+                <ImageView
+                    android:id="@+id/reviewImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/ratingBar"
+                    android:layout_toLeftOf="@id/ratingTextView"
+                    android:scaleX="-1"/>
+
+               <!-- <com.holidayme.widgets.LightFontTextView
+                    android:id="@+id/reviewsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ratingBar"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/reviewImageView"
+                    android:text=""
+                    android:textSize="12sp"/>-->
+
+            </RelativeLayout>
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="right"
+                android:text="@string/select_tour_options"
+                android:textSize="15sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/getawayRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:id="@+id/overviewTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/overview"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                android:textColor="@color/text_sky_blue"
+                android:textSize="25sp"/>
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/overviewTextView"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textDirection="rtl"/>
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/overviewReadMoreTextView"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/read_more"
+                android:textColor="@color/light_blue"
+                android:textSize="15sp"/>
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:id="@+id/hotelPoliciesTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="25dp"
+                android:text="@string/hotel_policies"
+                android:textColor="@color/text_sky_blue"
+                android:textSize="25sp"/>
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/hotelPoliciesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:textDirection="rtl"
+                />
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:id="@+id/importantTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="25dp"
+                android:text="@string/important"
+                android:textColor="@color/text_sky_blue"
+                android:textSize="25sp"/>
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/importantTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                />
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="25dp"
+                android:text="@string/amenities"
+                android:textColor="@color/text_sky_blue"
+                android:textSize="25sp"/>
+
+            <com.holidayme.common.AmenityGridView
+                android:id="@+id/amenitiesGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:numColumns="3"
+                />
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/ammenityShowLess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/less_ammenity"
+                android:visibility="gone"
+                android:textColor="@color/light_blue"
+                android:textSize="15sp"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"/>
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="25dp"
+                android:text="@string/near_and_around"
+                android:textColor="@color/text_sky_blue"
+                android:textSize="25sp"/>
+
+            <com.holidayme.widgets.LightFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="right"
+                android:text="@string/provided_by_foursquare"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/nearAndAroundRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/viewAllNearAroundTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/view_all"
+                android:textColor="@color/light_blue"
+                android:textSize="15sp"
+                android:layout_gravity="right|end"/>
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:id="@+id/policies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="25dp"
+                android:text="@string/policies"
+                android:textColor="@color/text_sky_blue"
+                android:textSize="25sp"/>
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/policiesTextView"
+                android:layout_gravity="right|end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:text=""/>
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:id="@+id/reviewsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="15dp"
+                android:text="@string/reviews"
+                android:textColor="@color/text_sky_blue"
+                android:textSize="25sp"/>
+
+            <com.holidayme.activities.util.NonScrollListView
+                android:id="@+id/reviewsAdapterListView"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="end"
+                android:gravity="end">
+
+            </com.holidayme.activities.util.NonScrollListView>
+
+            <Button
+                android:id="@+id/bookNowButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/book_now"
+                android:layout_margin="12dp"
+                android:background="@color/save_pink"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/openRequestImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phone"
+        android:layout_gravity="bottom|left"/>
+
+    <include
+        android:id="@+id/requestFormStaycationDetails"
+        layout="@layout/on_request_form"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/requestSuccessFormStaycationDetails"
+        layout="@layout/on_request_success"
+        android:visibility="gone"/>
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        android:src="@drawable/like"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+    <TextView
+        android:id="@+id/notificationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="10dp"
+        android:background="@drawable/circle_background"
+        android:elevation="8dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="45"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|right|center"
+        />-->
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_web_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:id="@+id/layout_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/custom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/actionbar_bottom_shadow"
+            android:gravity="center_vertical"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:ignore="UnusedAttribute,UselessParent">
+
+
+            <ImageView
+                android:id="@+id/toolbarBackImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_back_black"
+                tools:ignore="ContentDescription" />
+
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:id="@+id/toolbarTitleTextView"
+                style="@style/Toolbar.TitleText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingLeft="45dp"
+                android:textSize="18sp"
+                android:paddingRight="45dp"
+                android:maxLines="1"
+                android:text="" />
+        </RelativeLayout>
+    </LinearLayout>
+    <WebView
+        android:layout_above="@+id/skipButton"
+        android:id="@+id/loginWebView"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/Skip_Login"
+        android:textAllCaps="true"
+        android:background="@color/save_pink"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

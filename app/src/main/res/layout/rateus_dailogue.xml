@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="25dp"
+    android:background="@drawable/dialog_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+            android:text="@string/rate_us_title"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/dialog_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="@string/rate_us_msg"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_gray" />
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/txt_rate_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/rate_now"
+            android:textColor="@color/custom_dialog_button_text"
+             />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_gray" />
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/txt_remind_latter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/remind_later"
+            android:textColor="@color/custom_dialog_button_text"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_gray" />
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/txt_not_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/no_thanks"
+            android:textColor="@color/custom_dialog_button_text"
+           />
+
+
+</LinearLayout>

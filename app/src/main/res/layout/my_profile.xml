@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:clickable="true">
+
+    <LinearLayout
+        android:id="@+id/layout_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/custom_toolbar"
+            layout="@layout/custom_toolbar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="@dimen/common_padding_small"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:padding="@dimen/padding_normal">
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:text="@string/First_Name"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:text="@string/Last_Name"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:text="@string/Email_Address"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:text="@string/Display_Name"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <com.holidayme.widgets.MediumFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:text="@string/Mob_No"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pading_normal"
+                android:text="@string/City"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pading_normal"
+                android:text="@string/State"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pading_normal"
+                android:text="@string/Country"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pading_normal"
+                android:text="@string/Postal_code"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pading_normal"
+                android:text="@string/Address"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_normal">
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/txt_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_extra_large"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/txt_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_extra_large"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_extra_large"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/txt_display_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_extra_large"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <com.holidayme.widgets.LightFontTextView
+                android:id="@+id/txt_mob_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_extra_large"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+           <!-- <TextView
+                android:id="@+id/txt_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pading_extra_large"
+                android:layout_marginStart="@dimen/pading_extra_large"
+                android:layout_marginTop="@dimen/pading_normal"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pading_extra_large"
+                android:layout_marginStart="@dimen/pading_extra_large"
+                android:layout_marginTop="@dimen/pading_normal"
+                android:singleLine="true"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pading_extra_large"
+                android:layout_marginStart="@dimen/pading_extra_large"
+                android:layout_marginTop="@dimen/pading_normal"
+                android:singleLine="true"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_postal_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pading_extra_large"
+                android:layout_marginStart="@dimen/pading_extra_large"
+                android:layout_marginTop="@dimen/pading_normal"
+                android:singleLine="true"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pading_extra_large"
+                android:layout_marginStart="@dimen/pading_extra_large"
+                android:layout_marginTop="@dimen/pading_normal"
+                android:singleLine="true"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textStyle="bold"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingTop="@dimen/common_padding_small"
+    android:paddingBottom="@dimen/common_padding_small"
+    android:layout_height="match_parent">
+
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/reviewTitleTextView"
+            android:maxLines="1"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:ignore="ObsoleteLayoutParam"
+            android:textColor="@color/black"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/TripAdviserReviewImageView"
+        android:src="@drawable/icn_trip_adviser"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        tools:ignore="ContentDescription" />
+
+    <com.holidayme.widgets.LightFontTextView
+        android:layout_width="wrap_content"
+        android:text=""
+        android:id="@+id/publishDateTextView"
+        android:textSize="@dimen/commonExtraSmallTextSize"
+        android:layout_height="wrap_content" />
+
+    <com.holidayme.widgets.LightFontTextView
+        android:layout_width="wrap_content"
+        android:text=""
+        android:id="@+id/reviewDetailTextView"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:maxLines="4"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

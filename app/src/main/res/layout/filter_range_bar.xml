@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/top_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/common_padding_small">
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/Select_your_preferred_Price"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/padding_normal"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_line"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/edt_starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:padding="10dp"
+        android:textSize="@dimen/commonExtraSmallTextSize"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/commonLargeTextSize"
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/commonLargeTextSize"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/edt_endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:padding="10dp"
+        android:textSize="@dimen/commonExtraSmallTextSize"
+        android:visibility="gone" />
+
+    <com.holidayme.widgets.CustomRangeBar
+        android:id="@+id/custom_rangebar"
+        android:layout_below="@+id/top_linear_layout"
+        android:layout_width="@dimen/range_bar_width"
+        android:layout_height="@dimen/range_bar_height"
+        android:layout_centerInParent="true"
+        android:paddingStart="54dp"
+        android:paddingEnd="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/slide_eng_back" />
+
+
+</RelativeLayout>

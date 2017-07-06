@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#60000000"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/closeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/headingTextView"
+        android:layout_alignParentTop="true"
+        android:background="#60000000"/>
+
+    <com.holidayme.widgets.LightFontTextView
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edt_last_name"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="25dp"
+        android:text="@string/let_our_holiday_expert_call_you"
+        android:textColor="@color/dark_gray_text_color"
+        android:textSize="16sp" />
+
+    <com.holidayme.widgets.LightFontEditText
+        android:id="@+id/edt_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/lastNameView"
+        android:layout_toStartOf="@+id/clear_text_last_name"
+        android:background="@color/white"
+        android:hint="@string/full_name"
+        android:cursorVisible="true"
+        android:inputType="textPersonName|textNoSuggestions"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/small_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:paddingStart="@dimen/small_padding"
+        android:textColorHint="#c3c3c3"
+        android:textSize="14sp"
+        android:maxLength="40"
+        android:textCursorDrawable="@null"
+        />
+
+    <View
+        android:id="@+id/lastNameView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/edt_email"
+        android:background="@color/value_deal_bg" />
+
+    <com.holidayme.widgets.LightFontEditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/emailView"
+        android:layout_toStartOf="@+id/clear_text_email"
+        android:background="@color/white"
+        android:hint="@string/Email_Address"
+        android:inputType="textNoSuggestions|textEmailAddress"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/small_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:maxLength="30"
+        android:paddingStart="@dimen/small_padding"
+        android:textColorHint="#c3c3c3"
+        android:textSize="14sp"
+        android:textCursorDrawable="@null"/>
+
+    <View
+        android:id="@+id/emailView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/relative_layout"
+
+        android:background="@color/value_deal_bg" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edt_comment"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/layout_spinner_county_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingEnd="@dimen/padding_normal"
+            android:paddingStart="@dimen/padding_normal">
+
+            <Spinner
+                android:id="@+id/county_code_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <View
+
+            android:layout_width="0.5dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@+id/layout_spinner_county_code"
+            android:background="@color/light_gray_text_color" />
+
+        <com.holidayme.widgets.LightFontEditText
+
+            android:id="@+id/editText_mob_no"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/layout_spinner_county_code"
+            android:layout_toStartOf="@+id/clear_text_mobile"
+            android:background="@android:color/transparent"
+            android:hint="@string/Mob_No"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/small_padding"
+            android:paddingRight="@dimen/small_padding"
+            android:paddingStart="@dimen/small_padding"
+            android:textColorHint="#c3c3c3"
+            android:textSize="14sp"
+            android:maxLength="12"
+            android:textCursorDrawable="@null"/>
+
+        <View
+            android:id="@+id/mobileNoView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/editText_mob_no"
+            android:background="@color/value_deal_bg" />
+
+    </RelativeLayout>
+
+    <com.holidayme.widgets.LightFontEditText
+        android:id="@+id/edt_comment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/lastView"
+        android:background="@color/white"
+        android:hint="@string/your_comments"
+        android:inputType="textPersonName|textNoSuggestions"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/small_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:paddingStart="@dimen/small_padding"
+        android:textColorHint="#c3c3c3"
+        android:textSize="14sp"
+        android:maxLength="150"
+        android:textCursorDrawable="@null"/>
+
+    <View
+        android:id="@+id/lastView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/submitTextView"
+        android:background="@color/value_deal_bg"
+        android:paddingBottom="24dp" />
+
+    <RelativeLayout
+        android:id="@+id/submitTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/submitRequestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/submit_button_bg"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+
+        <com.holidayme.widgets.MediumFontTextView
+            android:id="@+id/headingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/staycation_theme"
+            android:gravity="center"
+            android:layout_above="@+id/callInfoTextView"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="@string/need_help_with_booking"
+            android:textColor="@color/blue"
+            android:textSize="15sp" />
+
+        <com.holidayme.widgets.LightFontTextView
+            android:id="@+id/callInfoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/staycation_theme"
+            android:gravity="center"
+            android:paddingBottom="25dp"
+            android:paddingTop="5dp"
+            android:text="@string/call_us_on"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_above="@+id/headerTextView"
+            />
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/or_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="7dp"
+        android:text="@string/or"
+        android:textColor="@color/back_text"
+        android:textSize="13sp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/headingTextView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+
+
+
+
